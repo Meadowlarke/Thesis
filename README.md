@@ -1,5 +1,5 @@
 # Playing *With* the Music:
-## Ecologies of Attention and Understating in the Classical Music Education Project of Sesame Street
+## Ecologies of Attention and Understanding in the Classical Music Education Project of Sesame Street
 This is the development page for my master's thesis. If you are lost, start here.
 
 This is GitHub, it is a place to manage files that are being developed by lots of people. It's mostly used by software developers, but it's a great tool for anybody who is doing long-term or collaborative writing. In an effort and experiment in transparency I've decided to make this project public. 
