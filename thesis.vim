@@ -5,7 +5,7 @@ set cpo&vim
 vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
-nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())
+nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 inoremap " ""ha
 inoremap ( ()ha
 cnoremap lkj 
@@ -15,16 +15,16 @@ inoremap rcg 
 inoremap { {}ha
 let &cpo=s:cpo_save
 unlet s:cpo_save
-set background=dark
 set backspace=indent,eol,start
 set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
 set nomodeline
 set printoptions=paper:letter
 set ruler
-set runtimepath=~/.vim,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim81,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/after,/usr/share/lilypond/2.20.0/vim/
+set runtimepath=~/.vim,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/after,/usr/share/lilypond/2.20.0/vim/
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
-let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+set window=40
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
@@ -49,9 +49,10 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 45 + 63) / 126)
-exe 'vert 2resize ' . ((&columns * 80 + 63) / 126)
+exe 'vert 1resize ' . ((&columns * 47 + 63) / 127)
+exe 'vert 2resize ' . ((&columns * 79 + 63) / 127)
 argglobal
+balt thesis.tex
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -139,6 +140,7 @@ setlocal noscrollbind
 setlocal scrolloff=-1
 setlocal shiftwidth=8
 setlocal noshortname
+setlocal showbreak=
 setlocal sidescrolloff=-1
 setlocal signcolumn=auto
 setlocal nosmartindent
@@ -147,6 +149,7 @@ setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
+setlocal spelloptions=
 setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
@@ -173,15 +176,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 16) / 33)
+let s:l = 1 - ((0 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-1
+keepjumps 1
 normal! 0
 wincmd w
 argglobal
 if bufexists("thesis.tex") | buffer thesis.tex | else | edit thesis.tex | endif
+balt ~/Zettelkasten/1109.md
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -269,15 +273,16 @@ setlocal noscrollbind
 setlocal scrolloff=-1
 setlocal shiftwidth=8
 setlocal noshortname
+setlocal showbreak=
 setlocal sidescrolloff=-1
 setlocal signcolumn=auto
 setlocal nosmartindent
 setlocal softtabstop=0
-set spell
-setlocal spell
+setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
+setlocal spelloptions=
 setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
@@ -304,20 +309,18 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 540 - ((25 * winheight(0) + 16) / 33)
+let s:l = 56 - ((22 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
-exe s:l
+keepjumps exe s:l
 normal! zt
-540
+keepjumps 56
 normal! 0
 wincmd w
-exe 'vert 1resize ' . ((&columns * 45 + 63) / 126)
-exe 'vert 2resize ' . ((&columns * 80 + 63) / 126)
+exe 'vert 1resize ' . ((&columns * 47 + 63) / 127)
+exe 'vert 2resize ' . ((&columns * 79 + 63) / 127)
 tabnext 1
-badd +41 ~/Zettelkasten/1063.md
-badd +1 thesis.tex
-badd +1 ~/Zettelkasten/1149.md
-badd +56 ~/Zettelkasten/1109.md
+badd +4 thesis.tex
+badd +1 ~/Zettelkasten/1109.md
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -325,10 +328,10 @@ unlet! s:wipebuf
 set winheight=1 winwidth=20 shortmess=filnxtToOS
 set winminheight=1 winminwidth=1
 let s:sx = expand("<sfile>:p:r")."x.vim"
-if file_readable(s:sx)
+if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
-let &so = s:so_save | let &siso = s:siso_save
+let &g:so = s:so_save | let &g:siso = s:siso_save
 nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
