@@ -1,7 +1,7 @@
 \documentclass[12pt,letterpaper]{article}
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL thesisold.tex   Thu Jun  2 11:42:31 2022
-%DIF ADD thesis.tex      Sat Jun  4 21:20:21 2022
+%DIF DEL thesisOld.tex   Mon Jul 18 10:16:06 2022
+%DIF ADD thesis.tex      Mon Jul 18 10:09:22 2022
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
@@ -10,15 +10,21 @@
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{palatino}
+%DIF 10a10
+\usepackage{afterpage} %DIF > 
+%DIF -------
 \usepackage[notes,backend=biber]{biblatex-chicago}
 \bibliography{thesis.bib}
-%DIF 12c12
-%DIF < \usepackage[left=1.20in, right=1.20in, top=1.20in, bottom=1.20in]{geometry}
-%DIF -------
-\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry} %DIF > 
-%DIF -------
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
 
 \newcommand{\ses}{\textit{Sesame Street }}
+ %DIF > 
+\newcommand\myemptypage{ %DIF > 
+	\null %DIF > 
+	\thispagestyle{empty} %DIF > 
+	\addtocounter{page}{-1} %DIF > 
+	\newpage %DIF > 
+	} %DIF > 
 %DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
 %DIF UNDERLINE PREAMBLE %DIF PREAMBLE
 \RequirePackage[normalem]{ulem} %DIF PREAMBLE
@@ -132,7 +138,7 @@
 	This is a paper about the ecologies of attention and understanding 
 	evident in and emergent from the presentation of classical music on the
 	classic children's television program \textit{Sesame Street.}  
-	The paper takes three parts. The first part is an analysis of context,
+	The paper takes \DIFdelbegin \DIFdel{three }\DIFdelend \DIFaddbegin \DIFadd{two }\DIFaddend parts. The first part is an analysis of context,
 	attention, and education on the program, framed through the analogy of
 	bird-watching. I argue that the classical music education which is 
 	presented on the program deviates from the humanitarian norm of 
@@ -152,20 +158,27 @@
 	framed through the analogy of the worm-listener---they who listen as 
 	outsiders to 
 	the arcane sound of the world beneath our feet. This section deals with
-	questions of parody, virtuosity, and childhood. It contains three
-	character studies of classical musicians who made appearances on the
-	program: Yo-Yo Ma, Evelyn Glennie, and Lang Lang.   
+	questions of parody, virtuosity, \DIFdelbegin \DIFdel{and childhood. It contains three
+	}\DIFdelend \DIFaddbegin \DIFadd{childhood, and disability. It 
+	is composed of }\DIFaddend character studies of \DIFdelbegin \DIFdel{classical musicians who made appearances on the
+	program: }\DIFdelend Yo-Yo Ma \DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{and }\DIFaddend Evelyn Glennie, 
+	\DIFdelbegin \DIFdel{and Lang Lang.   
+}%DIFDELCMD < 
 
-	
-	In this section I argue that \textit{Sesame Street} takes part in a
+%DIFDELCMD < 	
+%DIFDELCMD < 	%%%
+\DIFdel{In this section I argue that }\textit{\DIFdel{Sesame Street}} %DIFAUXCMD
+\DIFdel{takes part in a
 	long tradition of classical music parody which welcomes the outsider
 	while at the same time engages the classical music native and initiate
 	---that is, the worm, who has spent its life embedded in the classical
 	strata.
-	\textit{Sesame Street} neither challenges nor exalts the classical 
+	}\textit{\DIFdel{Sesame Street}} %DIFAUXCMD
+\DIFdel{neither challenges nor exalts the classical 
 	music canon, but rather serves as an enabling technology, a 
-	\textit{geophone}, which allows for the aerial listener to perceive and
-	engage with the arcane sounds of underworld.  
+	}\textit{\DIFdel{geophone}}%DIFAUXCMD
+\DIFdel{, which allows for the aerial listener to perceive and
+	engage with the arcane sounds of underworld}\DIFdelend \DIFaddbegin \DIFadd{as the appear on the program}\DIFaddend .   
 
 	Here, I introduce Leonard Bernstein's dichotomy of education vs.
 	pedagogy, that is, ``acquainting people with 
@@ -175,70 +188,38 @@
 	uplift and analyze how this dichotomy plays out on \textit{Sesame
 	Street}.  
 
-	This project takes shape in two media: one is what you are reading 
+	\DIFdelbegin \DIFdel{This project takes shape in two media: one is what you are reading 
 	right now, the 
-	``white paper'' presentation of the research. The other is a 
+	``white paper'' presentation of the research. The other isa 
 	non-striated recreation of the field in the form of a Multi User 
-	Domain, or MUD. The third section of this paper---the mushroom 
-	hunter---deals with the themes of diversity,
-	equity, and liberation which inform the project.  
+	Domain, or MUD.
+	The third section of this paper---the mushroom 
+	hunter---deals with the themes of diversity, equity, and liberation which inform the project}\DIFdelend \DIFaddbegin \DIFadd{In this section I argue that }\textit{\DIFadd{Sesame Street}} \DIFadd{takes part in a
+	long tradition of classical music parody which welcomes the outsider
+	while at the same time engages the classical music native and initiate
+	---that is, the worm, who has spent its life embedded in the classical
+	strata.
+	}\textit{\DIFadd{Sesame Street}} \DIFadd{neither challenges nor exalts the classical 
+	music canon, but rather serves as an enabling technology, a 
+	}\textit{\DIFadd{geophone}}\DIFadd{, which allows for the aerial listener to perceive and
+	engage with the arcane sounds of underworld}\DIFaddend .  
 
-	\DIFdelbegin \DIFdel{The majority of the case studies in this paper are presented as a long
-	transcription of the skit. If the resources are available online, 
-	there will also be the link to the recording in the accompanying 
-	footnote. I do this with the philosophy of ``accessible design is good 
-	design,'' that is, that everyone, not only the disabled, benefits from
-	accessible technology and infrastructure. I leave these transcriptions,
-	which were part of my analyses process, as assistive devices for those
-	with visual or hearing impairments, or simply for those with bad
-	internet connections, who would like to view the whole skit. Some might
-	say that this is excessive and that I should just present what I need 
-	in order to make my argument and move on. This may be stylistically 
-	appropriate for 
-	film studies, but I am a }\textit{\DIFdel{media ecologist}}%DIFAUXCMD
-\DIFdel{. My ultimate goal is 
-	not to make and defend arguments, but rather make space and fertile 
-	ground for observation and analysis. I also follows in the 
-	practice of ``thick description'' and observational ethnography 
-	grounded in numerous specific and well documented observations.
-	\ses, and television more generally, are no less cultural enactions
-	than a rite or a pow-wow for being taped for television. They are
-	expressions of culture dependent on the inculturation of the viewer 
-	for the meaning, and deserve the same level of observation. They have 
-	the benefit, however, of reproducibility. You do not have to be an 
-	expert to read my ethnography and judge whether it is reasonable that
-	an Azande woman would do this or that, you can simply watch the
-	recording of Bert and Ernie, and decide if my reading and transcription
-	aligns with your reading. 
-}%DIFDELCMD < 
-
-%DIFDELCMD < 	%%%
-\DIFdelend Each part of the paper begins with a prologue---or dare I say, a 
+	Each part of the paper begins with a prologue---or dare I say, a 
 	dramatic monologue---written in first-person perspective
 	which grounds the following discussion. If the chapters look at
 	musical and educational ecologies, the prologues give lived context for
-	the geological bedrock on which these ecologies are based.  
-
-	\DIFdelbegin \DIFdel{The paper ends with a }\textit{\DIFdel{metalogue}}%DIFAUXCMD
-\DIFdel{, which exists before, after, 
-	and above the rest of the paper. It looks at \ses cast member, 
-	musician, and activist Buffy Sainte-Marie, a member of the Cree people
-	of Canada, who infused the show from an early date with indigenous 
-	knowledge practices, ultimately leaving her influence on all things 
-	}\textit{\DIFdel{Sesame Street}}%DIFAUXCMD
-\DIFdel{. The section positions \ses within an indigenous
-	tradition of care and community learning.
-	It also positions this paper, with its alternative title 
-	}\textit{\DIFdel{Three Stories of Listening}}%DIFAUXCMD
-\DIFdel{, within an indigenous story-telling
-	tradition. 
-}%DIFDELCMD < 
+	the geological bedrock on which these ecologies are based. \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < 	%%%
-\DIFdelend I'll count myself off: LIGHTS. CAMERA. ACTION!	
+\DIFdel{I'll count myself off: LIGHTS. CAMERA.  
+ACTION!	
+}\DIFdelend \DIFaddbegin \DIFadd{The paper 
+	ends, as it begins, with a final prologue. This final section compares
+	experiencing the internet to mushroom hunting, and looks at recent media	changes to \ses street consumption.  
+}\DIFaddend 
 
 	\newpage	
-	\section*{Prologue: In \textit{media} res}
+	\section*{Prologue \DIFaddbegin \DIFadd{to Part I }\DIFaddend : In \textit{media} res}
 
 	\noindent
 	On a summer evening in Saint Louis I was listening to the radio in
@@ -280,15 +261,13 @@
 	``cultivate an understanding of the human experiences of Afghanistan 
 	along with us.'' 
 
-
 	Etymologically, the ``under'' in the first half of the word 
 	``understand'' does not denote the more modern ``below,'' but rather 
 	among or in-between. \autocite{Ety} To understand is to stand among. 
 	What NPR is offering, then, is empathy in a broadcast. 
 
-
 	This offering of empathy continues the founding ethos of NPR 
-	and its focus on hearing common people speak. 
+	and its focus on hearing \DIFdelbegin \DIFdel{common people speak}\DIFdelend \DIFaddbegin \DIFadd{voices from the general public}\DIFaddend . 
 	\textit{All Things Considered}, now one of the most listened-to programs
 	on American radio, debuted with the chaotic coverage of
 	what at the time was the biggest anti-Vietnam war protest to date. It
@@ -296,12 +275,16 @@
 	overarching narrative. It was unlike anything on the radio at the time.
 	Its chaos was intended to capture the chaos of the moment, but was also
 	part of a larger aesthetic and political trend on the program to hear 
-	the voices of normal Americans. Something now known as the 
-	``public radio sound.'' 
+	the voices of normal Americans. \DIFdelbegin \DIFdel{Something now }\DIFdelend \DIFaddbegin \DIFadd{While this has never been the exclusive,
+	or even most prevalent, style of production for public radio, it has 
+	become }\DIFaddend known as the ``public radio sound\DIFdelbegin \DIFdel{.'' }\DIFdelend \DIFaddbegin \DIFadd{'' because of its distinct, 
+	recognizable, texture and origin on NPR. 
+}\DIFaddend 
 
-	The sound is recognizable to this day by its lack of a 
-	narrator and the featuring of interviewees from the general public. It 
-	was pioneered by the ``founding mother'' of NPR, radio 
+	\DIFdelbegin \DIFdel{The sound is recognizable to this day by its lack of a 
+	narrator and the featuring of interviewees from the general public. 
+It 
+	}\DIFdelend \DIFaddbegin \DIFadd{This sound was }\DIFaddend was pioneered by the ``founding mother'' of NPR, radio 
 	journalist Susan Stamberg. She was inspired by the cinema verité of the
 	time, saying that the idea ``was to tell a story without telling it---
 	just sound through chunks.'' This meant no authoritative radio voice,
@@ -309,17 +292,46 @@
 	along to another speaker. The work of narrative interpretation is left
 	to the listener, who is given a more rhizomatic view of the events---
 	a radical new direction in radio journalism and broadcast culture more
-	generally.  
+	generally.  \DIFdelbegin %DIFDELCMD < 
 
-	One particular aspect of the public radio sound was the use of ``cross
+%DIFDELCMD < 	%%%
+\DIFdelend One particular aspect of the public radio sound was the use
+	of ``cross
 	talk,'' a technique in which two voices are layered onto one another 	
 	in polyphony, which was inspired by Glenn Gould's ``contrapuntal 
 	storytelling'' in \textit{The Solitude Trilogy.}\autocite[197]{Porter}
 	Stamberg retrospectively described the debut as having ``no interfering 
 	narrator.''\autocite[185]{Porter}
 
-	The showcasing of alternative voices was so central to the ethos of the
-	young network that NPR turned down a \$300,000 donation from 
+	\DIFaddbegin \DIFadd{This ``interfering narrator'' is codified in the ``Radio Diaries DIY
+	Handbook,'' created by Joe Richman and his independent radio production
+	company Radio Diaries, perhaps the most exemplary modern example of the 	public radio sound. In the forward by radio producer Jay Allison writes 	that ``reported stories, no matter how great they are, 
+	insert the reporter’s sensibility and style into the narrative. When 
+	outside narrators tell the stories, you feel their contexts in their 
+	voices. Along with the story, you notice the podium from which it is 
+	told. Listen to any vintage reporter piece to hear what I mean. 
+	Un-narrated pieces, on the other hand, arise from their sources and 
+	become a kind of time capsule of human experience, capturing an 
+	undiluted essence, feeling real.'' The handbook gives instruction on how
+	to create ``un-narrated'' audio stories, and centers this style within
+	an ethos of radio for the common good. Allison continues that ``it's 
+	worth noting that this book, and the work of 
+	Radio Diaries, sprang from public radio. It was created in the context 
+	of a mission, a public service, a common goal of civic good. This is 
+	important. It keeps the work from being selfish, or from merely seeking
+	financial gain or popularity. It creates a community of work so that, 
+	taken together, all the stories we make in public radio can affect the 
+	tone of civic life.''}\autocite{Richman} \DIFadd{Allison is arguing here that not only
+	do stories without central narrators give a truer representation of the 
+	events, unimpeded and uncolored by the intermediary authority of the
+	narrator, but this platforming of individuals from outside of journalism
+	is essential to the health of public discourse, something with which
+	Susan Stamberg would likely agree.  
+	}
+
+	\DIFaddend The showcasing of alternative voices was so central to the ethos of \DIFdelbegin \DIFdel{the
+	young network that NPR }\DIFdelend \DIFaddbegin \DIFadd{a 
+	young NPR that the network }\DIFaddend turned down a \$300,000 donation from 
 	the Ford 
 	Foundation contingent on the network hiring well-known broadcast
 	journalist Edward P. Morgan as host of \textit{All Things Considered}. 
@@ -330,7 +342,8 @@
 	The ethos of ``standing among'' seems to be baked in to the entire
 	project of public radio.
 
-	This ethos is visible in public television as well. In the mid-1960s
+	This ethos is visible in public \DIFdelbegin \DIFdel{television as }\DIFdelend \DIFaddbegin \DIFadd{television---\ses media and 
+	institutional habitat---as }\DIFaddend well. In the mid-1960s
 	Ralph Lowell, Board Chairman of the Boston Educational Television 
 	station proposed that the Oval Office put together a commission on 
 	educational television. President Johnson, believing that this was
@@ -426,12 +439,21 @@
 	children, a move which would also help keep preschoolers focused,
 	the producers aimed to make the show entertaining enough for parents
 	to want to watch it along with their children.
-	\autocite[294]{Ostrofsky2017}
-	\footnote{Mixed-age television targeting likely began on the 
-	television program \textit{Captain Kangaroo}. \autocite[46]{Davis}} 
+	\DIFdelbegin %DIFDELCMD < \autocite[294]{Ostrofsky2017}
+%DIFDELCMD < 	%%%
+\footnote{\DIFdel{Mixed-age television targeting likely began on the 
+	television program }\textit{\DIFdel{Captain Kangaroo}}%DIFAUXCMD
+\DIFdel{. }%DIFDELCMD < \autocite[46]{Davis}%%%
+} 
+	%DIFAUXCMD
+\addtocounter{footnote}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
-	In terms of music, you see to this effect the featuring of musical 
-	performers that parents would know, often playing educational parodies 
+%DIFDELCMD < 	%%%
+\DIFdel{In terms of music, you see to this effectthe featuring of }\DIFdelend \DIFaddbegin \autocites[294]{Ostrofsky2017}[Mixed-age television targeting likely began on the 
+	television program \textit{Captain Kangaroo}.][46]{Davis} 
+	\DIFadd{To this effect, on \ses }\DIFaddend musical performers that parents would know \DIFaddbegin \DIFadd{are 
+	featured}\DIFaddend , often playing educational parodies 
 	of their own work. For example, Norah Jones' performance on \ses in 
 	2004.\autocite{4081} Sitting at the piano with Elmo, Jones 
 	re-spins ``I Don't Know Why,'' a somber song of heartbreak and 
@@ -458,8 +480,9 @@
 	thing in common.''\autocite[297]{Ostrofsky2012}
 
 	Rapso's belief in the power of music is idealistic and his assumption
-	that the privileged child has never heard blues or gospel is 
-	over-simplistic, but we see with this statement a clear expression of
+	that the privileged child has never heard blues or gospel\DIFaddbegin \DIFadd{, or is 
+	immersed in classical music, }\DIFaddend is over-simplistic, but we see with this 
+	statement a clear expression of
 	an ethics of understanding through sonic exposure: 
 	By using entertainment to focus attention and expose children to music 
 	from other social and economic contexts,
@@ -472,8 +495,8 @@
 	as these neoliberal  discourses, I find that the presentation of music
 	on \textit{Sesame Street} diverges from the standard neoliberal
 	narratives of music and music education, which I discuss in the section
-	``Grouchy about multiculturalism.'' I understand these neoliberal
-	discourses through
+	``\DIFdelbegin \DIFdel{Grouchy about multiculturalism}\DIFdelend \DIFaddbegin \DIFadd{Interiority and the limits of understanding}\DIFaddend .'' I understand these 
+	neoliberal discourses through
 	Ana Bull's analysis of their prevalence in the British musical
 	education system in \textit{Class, Control, and Classical Music} and
 	Marianna Ritchey's analysis of how classical music has been put to the
@@ -485,8 +508,15 @@
 	music, nor even in creating music, but instead 
 	based in sonic exposure and practices of listening.  
 
-	I take many cues from sound studies and acoustic ecology, particularly 
-	Annea Lockwood. A composer from New Zealand, Lockwood is known for her 
+	\DIFdelbegin \DIFdel{I take many cues from sound studies and acoustic ecology, particularly Annea Lockwood. 
+	A composer from New Zealand , }\DIFdelend \DIFaddbegin \DIFadd{Practices of listening can be understood from a number of fields,
+	most canonically musicology and sound studies. However, I find that 
+	sound art and the closely related field of acoustic ecology are 
+	particularly illuminating tools for understanding how we listen. 
+	In particular, the compositions and frameworks for 
+	understanding presented by New Zealand composer Annea Lockwood give 
+	shape to forms of listening which are not centered in subject-object 
+	relationships.	}\DIFaddend Lockwood is known for her 
 	fascination with the transitory nature of natural sounds, particularly 
 	those of water and rivers. In the 1960s, Lockwood began a project with
 	the goal of recording and archiving the sound of every river on the 
@@ -539,36 +569,49 @@
 	framework for the analysis of the acoustic ecology of 
 	\textit{Sesame Street}. 
 
-	To understand the practice of listening, I take the definition offered 
-	by Pauline Oliveros, a contemporary and friend of 
-	Lockwood.\autocite[116]{Rodgers} In relation to her practice of ``deep 
+	\DIFdelbegin \DIFdel{To understand the practice of listening, I take the definition offered 
+	by }\DIFdelend Pauline Oliveros, a contemporary and friend of 
+	Lockwood\DIFdelbegin \DIFdel{.}\DIFdelend \autocite[116]{Rodgers}  \DIFdelbegin \DIFdel{In relation to her practice of ``deep 
 	listening,'' a complete and intense sonic awareness based in observation	
-  rather than judgement, Oliveros distinguishes listening from hearing, 
-	clarifying that ``to hear is the physical means that enables perception.
+  rather than judgement, Oliveros distinguishes listening from 
+	hearing, clarifying }\DIFdelend \DIFaddbegin \DIFadd{distinguishes }\textit{\DIFadd{listening}} \DIFadd{from 
+	}\textit{\DIFadd{hearing}}\DIFadd{, saying }\DIFaddend that ``to hear is the physical means that 
+	enables perception.
 	To listen is to give attention to what is perceived both acoustically 
-	and psychologically.''\autocite[33/366, As things stand today, e-books
+	and psychologically.'' \DIFaddbegin \DIFadd{She defined her practice of ``deep listening''
+	as a complete and intense sonic awareness based in observation
+	rather than judgement. }\DIFaddend \autocite[33/366, As things stand today, e-books
 	are basically useless for academic research because they lack, of all
 	things, page numbers. At its bare-bones, a synthetic work like this
 	methodology section is just a long list of page numbers, which makes 
 	my reading habbits slightly unhealthy. I'm going to go back and find
 	the page numbers in the hard cover edition, but for now, I will list
 	them as fractions.]{Odell}  
+	\DIFdelbegin %DIFDELCMD < 
 
-	I take ``listening \textit{with}'' not as ``hearing \textit{with},'' 
+%DIFDELCMD < 	%%%
+\DIFdel{I take ``listening }\DIFdelend \DIFaddbegin \DIFadd{``Listening }\DIFaddend \textit{with}\DIFdelbegin \DIFdel{'' not as }\DIFdelend \DIFaddbegin \DIFadd{,'' then is not }\DIFaddend ``hearing \textit{with},'' 
 	that is, not as co-perception, but rather an amorphous and rhizomatic
 	form of co- and meta- awareness and offering of attention.  
 
-	My understanding of attention and my larger framework for understanding
+	\DIFdelbegin \DIFdel{My understanding of attention and my larger framework for understanding
 	the media ecology of children's television comes from the theories 
-	developed by Jenny Odell in 
-	\textit{How To Do Nothing}, a book at the intersection of media theory
-	and ecology. Odell places attention as the center of ethics. We decide 
+	developed }\DIFdelend \DIFaddbegin \DIFadd{The social and artistic significance of attention is analyzed }\DIFaddend by Jenny
+	Odell in \textit{How To Do Nothing}, a book at the intersection of media
+	theory
+	and ecology. Odell places attention \DIFdelbegin \DIFdel{as }\DIFdelend \DIFaddbegin \DIFadd{at }\DIFaddend the center of ethics\DIFdelbegin \DIFdel{. }\DIFdelend \DIFaddbegin \DIFadd{: }\DIFaddend We decide 
 	who is seen, who is heard, and who has agency, through acts of 
-	attention. \autocite[154]{Odell} I propose that Odell can help us 
-	interpret the soundscape of \textit{Sesame Street} and the listening
+	attention. \autocite[154]{Odell} \DIFdelbegin \DIFdel{I propose that Odell can help us 
+	interpret the soundscape of
+	}\textit{\DIFdel{Sesame Street}} %DIFAUXCMD
+\DIFdel{and the listening
 	which it cultivates. I take her theories of attention as my primary
 	framework for the ecologies of music and understanding
-	prevalent in the program. I make this shift away from traditional
+	prevalent in the program}\DIFdelend \DIFaddbegin \DIFadd{\ses is constantly showcasing acts of
+	attention, whether it is a conversation between two Muppets about hurt
+	feelings, or two musicians interacting on the concert stage. Centering 
+	attention as an object of study gives access to the practices of
+	listening that \ses teaches}\DIFaddend . I make this shift away from traditional
 	musicological tools of analysis largely because \ses is a project which
 	spans multiple generations of artists, producers, and sources of
 	funding, yet has retained its character. It changes more like a forest
@@ -587,9 +630,11 @@
 	of the different birds in an environment, and thereby becomes aware
 	of the ecology around them and their place within 
 	it.\autocite[33/366]{Odell} 
+	\DIFdelbegin %DIFDELCMD < 
 
-	
-	This ecological, attention-based understanding of the world requires 
+%DIFDELCMD < 	
+%DIFDELCMD < 	%%%
+\DIFdelend This ecological, attention-based understanding of the world requires 
 	that one gives up the idea of discrete entities, simple origin stories,
 	and simple one-to-one causalities, and above all, requires time.
 	The direct product of this attention, Odell says, is context. 
@@ -598,15 +643,20 @@
 	relationships of an environment. The longer that the attention is held, 
 	the more context appears.\autocite[155]{Odell} 
 
-	This is musically apparent in the skits of Muppet Simon Soundman.
+	\DIFdelbegin \DIFdel{This is musically apparent }\DIFdelend \DIFaddbegin \DIFadd{Bird listening musical behavior takes place }\DIFaddend in the skits of \DIFaddbegin \DIFadd{early }\DIFaddend Muppet
+	Simon Soundman\DIFaddbegin \DIFadd{, who has a phonographically accurate voice and often
+	substitutes nouns for the sounds that they make}\DIFaddend .  
 	In one skit from 1973,\autocite{0458} Simon visits a music store, where
 	he tells the shopkeeper
 	that he is in the market for a ``nice, shiny---'' and then we hear a
 	long trumpet lick as his mouth moves in time. 
 
 	\begin{quote}
+	\DIFdelbegin %DIFDELCMD < 
 
-	``Uh... Oh... Would you mind repeating that, sir?''
+%DIFDELCMD < 	%%%
+\DIFdelend \DIFaddbegin \ttfamily
+	\DIFaddend ``Uh... Oh... Would you mind repeating that, sir?''
 
 	``No, indeed. What I said was I'd like to buy a nice, shiny---'' and
 	then the trumpet sounds again. 
@@ -633,7 +683,12 @@
 	a big band---the sound that the shopkeeper himself makes once Simon
 	leaves, saying ``that fellow was pretty good. Huh. I should have asked
 	him if he would like to play in our---'' and we hear the sounds of a
-	big band.  
+	big band. \DIFaddbegin \DIFadd{Simon's shtick is that he substitutes nouns with sounds. This
+	is and especially effective gag when he is discussing instruments, as
+	instruments are known for, in a sense are, their sounds. Knowing what 
+	each instrument is requires listening in order for one to engage with 
+	it and take part in the play and humor of this skit.  
+}\DIFaddend 
 
 	But Rapso's statement on music and the broader ethos of \ses 
 	demonstrated through its programming go beyond awareness and context of 
@@ -660,7 +715,9 @@
 	\subsubsection*{Case Study 1: Itzahk Perlman and ``What's Easy for You
 	 is Hard for Me''}
 
-	Fading in from black, there is a simple stage set with three folding 
+	\DIFaddbegin \ttfamily
+
+	\DIFaddend Fading in from black, there is a simple stage set with three folding 
 	chairs. On the third to the right is an instrument case. Entering from 
 	the bottom of the frame, a girl runs up the big grey steps to the stage 
 	and takes a seat to the left, smiling. She looks in the direction she 
@@ -718,13 +775,26 @@
 	it is about the interaction of the two musicians and how they listen to 
 	and acknowledge each other's lived experiences of music and the world. 
 
-	We may be watching from home as a television audience, bit what we see
+	\DIFaddbegin \DIFadd{Of course, their experiences are not equal---being a novice violinist does
+	not have the same implications as being a disabled person. While this
+	skit greatly simplifies what is means to be a disabled person, showing 
+	only Perlman's difficulty with the steps, it does not flatten their 
+	difficulties to equivalence, nor does
+	it reduce their interaction to dichotomies of ability vs. disability 
+	and mastery vs. inexperience. The point here seems to be to normaliza
+	e disability and to present the girl and Perlman both as multifaceted
+	 human beings worthy of being seen and listened to. 
+	}
+
+	\DIFaddend We may be watching from home as a television audience, bit what we see
 	is not the somber performance of canonic works, nor is it an accessible
 	presentation of a classical music program for non-initiates. What we 
 	are watching is a demonstration of ecological musical listening, of 
-	listening \textit{with}. 
+	listening \textit{with}. \DIFdelbegin %DIFDELCMD < 
 
-	One might object that this is \textit{media}, and that what we are
+%DIFDELCMD < 	%%%
+\DIFdelend One might object that this is \textit{media}, 
+	and that what we are
 	seeing is fake, a construction. That is, in fact, the case. However, 
 	that does not reduce the potential of an ecological reading of this 
 	skit, nor its efficacy as a demonstration. What we are seeing here is a 
@@ -740,8 +810,8 @@
 	by collaborative online communities and their projects, such as 
 	Wikipedia, to describe webpages and other spaces where users are free 
 	to experiment without risk of damaging actual 
-	content.\autocite{Wiktionary} I use this term
-	to describe a style of educational material where the learner is
+	content.\autocite{Wiktionary} \DIFdelbegin \DIFdel{I use this term }\DIFdelend \DIFaddbegin \DIFadd{The term is also used
+	}\DIFaddend to describe a style of educational material where the learner is
 	presented with a place to learn, play, and explore, much like a
 	playground sandbox. The sandboxed space contains materials which are
 	real and pre-existing, just as sand is, but have been curated for 
@@ -778,7 +848,9 @@
 
 	\subsubsection*{Case Study 2: Glennie and Linda}
 
-	Glennie is first introduced by an off-screen voice: ``And Now, Evelyn 
+	\DIFaddbegin \ttfamily
+
+	\DIFaddend Glennie is first introduced by an off-screen voice: ``And Now, Evelyn 
 	Glennie, world famous percussionist, will perform a duet with her 
 	friend Linda.''
 
@@ -952,9 +1024,10 @@
 	in Cooney's report and the musical ethos of Rapso, we get a program 
 	where children are taught how to \textit{listen} as a cognitive habit. 
 
-	I use this term \textit{non-striated} to denote a space which is not
+	\DIFdelbegin \DIFdel{I use this term }\textit{\DIFdel{non-striated}} %DIFAUXCMD
+\DIFdel{to denote a space which is not
 	hierarchical and bounded like striated space as understood by Deleuze 
-	and Guattari. In a chapter of their book \textit{A Thousand Plateaus: 
+	and Guattari. }\DIFdelend In a chapter of \DIFdelbegin \DIFdel{their book }\DIFdelend \DIFaddbegin \DIFadd{Deleuze and Guattari's }\DIFaddend \textit{A Thousand Plateaus: 
 	Capitalism and Schizophrenia} titled ``[The year] 1400'' the duo 
 	establishes a binary between smooth and striated spaces. This chapter, 
 	or rather, this
@@ -975,8 +1048,9 @@
 	measured, and governed spaces of fabric, the state, and---in this 
 	case---the traditional classroom.       
 
-	The educational analyses in this paper are informed in large part by 
-	Ivan Illich and his book \textit{Deschooling Society} where he argues
+	\DIFdelbegin \DIFdel{The educational analyses in this paper are informed in large part by 
+	Ivan Illich and }\DIFdelend \DIFaddbegin \DIFadd{Ivan Illich problematizes the striated classroom in }\DIFaddend his book
+	\textit{Deschooling Society} where he argues
 	that learning would be improved by the abolition of formalized
 	compulsory education. Along these lines, Illich says that it is 
 	delusional to think that we can determine what is necessary education 
@@ -1040,8 +1114,9 @@
 
 	Furthermore, the argument that it is non-Illichian because it is
 	is children's media depends on the assumption that \ses is educational
-	material only and not itself a work of art. 
-	Analyzing \ses as art opens a whole tool set for understanding as well
+	material only and not itself a work of \DIFdelbegin \DIFdel{art}\DIFdelend \DIFaddbegin \DIFadd{highly intentional and expertly
+	crafted media}\DIFaddend . Analyzing \ses as \DIFdelbegin \DIFdel{art }\DIFdelend \DIFaddbegin \DIFadd{virtuosically constructed media }\DIFaddend opens a
+	whole tool set for understanding as well
 	as bringing us closer to the production experiences of the Broadway, TV,
 	and radio producers who were writing the show.  
 
@@ -1153,8 +1228,9 @@
 	as technological than social---at this point the ideas as they were 
 	presented did not include the racial politics which we will see in 
 	the Hoots and Ma skit in section X, but were more involved with 
-	questions of the ability of the technology---so far used only for 
-	mindless entertainment---to educate. This education was intended 
+	questions of the ability of the \DIFdelbegin \DIFdel{technology---so far used only for 
+	mindless entertainment---to }\DIFdelend \DIFaddbegin \DIFadd{technology to }\DIFaddend educate. This education 
+	was intended 
 	especially for inner-city children as part of the humanitarian goals 
 	which undergird the project, however, throughout its conception and 
 	production, the Children's Television Workshop tried to make a program 
@@ -1209,27 +1285,32 @@
 	``ecological,'' ``deschooled,'' or ``anarchist,'' these are not to imply
 	that executive producer Joan Ganz Cooney was an anarchist media theorist
 	who 
-	constructed a program based on her philosophies of education, but rather 	
-  that the answers to the particular design problems which the writing 
+	constructed a program based on her philosophies of education, but rather 
+	that the answers to the particular design problems which the writing 
 	team faced led them to a particular philosophy of design which, by way 	
 	of a sort of convergent evolution, lies so close the above philosophies 
 	that Ivan Illich provides a functional language for the analysis of 
 	\textit{Sesame Street}.
+	\DIFdelbegin %DIFDELCMD < 
 
-	Taking as my definition of anarchism, ``the principled opposition to 
+%DIFDELCMD < 	%%%
+\DIFdelend Taking as my definition of anarchism, ``the principled opposition to 
 	coercion,'' what we have here is instead ``the pragmatic disutility of 
 	coercion.'' Is this anarchism? In many ways no, but the results 
 	are so similar that it is hard to tell the difference, or if that 
 	difference is really meaningful.
 
-	My analysis via these philosophies does the work of highlighting this 
+	\DIFdelbegin \DIFdel{My analysis via these philosophies does the work of highlighting this 
 	convergence with radical politics which might otherwise go unnoticed. 
 	``Anarchy'' is a word which frightens both those on the left, seemingly
 	 resonant of Libertarianism, and those on the right, for whom it stinks 
 	of Marxism. My goal is multifold: on the one side I would like to 
-	analyze these aspects of \textit{Sesame Street}’s musical education 
-	which have gone overlooked. This is germane to scholars of 
-	\textit{Sesame Street}, television, and children’s media. On the other 
+	analyze these aspects of }\DIFdelend \DIFaddbegin \DIFadd{This section has analyzed the ways that attention and understanding 
+	play out in the educational project of }\DIFaddend \textit{Sesame Street\DIFaddbegin \DIFadd{.}\DIFaddend } 
+	\DIFdelbegin \DIFdel{’s musical educationwhich have gone overlooked. 
+	This is germane to scholars of 
+	}\textit{\DIFdel{Sesame Street}}%DIFAUXCMD
+\DIFdel{, television, and children’s media. On the other 
 	side, this is relevant musical pedagogy more broadly. In a sense,
  	I am attempting to radicalize \ses and thereby normalize anarchism and 
 	deschooling and in so doing suggest new forms of education for all ages. 
@@ -1241,8 +1322,10 @@
 	design 	practices reflect about musical education more broadly? 
 	In other words, how can \ses give us insight into more resilient forms
 	of musical eduction?
+}%DIFDELCMD < 
 
-	This is not, mind you, a paper on how deschooling can save education and
+%DIFDELCMD < 	%%%
+\DIFdel{This is not, mind you, a paper on how deschooling can save education and
  	how \ses gives us a convenient case study to this end. Illich 
 	describes education as the fundamental state of human kind, it needs
 	saving no more than does the abstract concept of love. I would also 
@@ -1251,23 +1334,35 @@
 	a singular moment wherein a watershed decision must be made. Working 
 	within the Illichian framework, the moment of crisis came and went in 
 	the early modern period and maybe earlier.
+}%DIFDELCMD < 
 
-	Rather, this section has been a critical look into the emergent design 
+%DIFDELCMD < 	%%%
+\DIFdel{Rather,
+	this section has been a critical look into the emergent design 
 	philosophies of musical distance-education as they appear in the \ses 
 	archive. While my research is localized to one particular television 
-	program, this study has ramifications for the present moment of 
-	education. That said, my goal is not to suggest that instructors remove 
+	program, this study has ramifications for the present moment of education. That said, my goal is not to suggest that instructors remove 
 	their attendance requirements and stop assigning letter grades, but 
-	rather, in an Odellian sense, to teach the bird-song of non-coercion 
-	so that it may be appreciated where it perches.
+	rather, in an Odellian sense, to teach the bird-song of 
+	non-coercion 
+	so that it may be appreciated where it perches}\DIFdelend \DIFaddbegin \DIFadd{\ses gives us insight into alternatively distributed and 
+	technologically mediated education. 
+	The pandemic has provided, or rather, forced, a laboratory of new modes
+	of serving instruction and educational materials, as well as new 
+	paradigms of digitally mediated labor. \ses can be thought of as an 
+	experiment in distance learning. The program was a fairly radical
+	and experimental production when it first appeared, and its model 
+	still seems to be working. It raises the question, looking forward,
+	as to how we can design more resilient forms of education, and how
+	these educational practices can cultivate liberatory forms of 
+	listening}\DIFaddend . 
 
-
-
-
+	\newpage	
+	\DIFaddbegin \myemptypage
 
 
 	\newpage
-	\section*{Prologue: Geophones, televisons, worms}
+	\DIFaddend \section*{Prologue \DIFaddbegin \DIFadd{to Part II}\DIFaddend : Geophones, televisons, worms}
 
 	I spent something like a quarter of my life on the south side of 
 	Chicago. There was a summer during that period where I got into the 
@@ -1308,7 +1403,24 @@
 	an air-based listener, this was the sonic experience of a complete 
 	outsider.	
 
-		
+	\DIFdelbegin \DIFdel{Worms }\DIFdelend \DIFaddbegin \DIFadd{The worms may have heard me, but worms }\DIFaddend don't have ears. They are able 
+	to hear the movement of other 
+	animals, to hear \textit{my} movements above them\DIFaddbegin \DIFadd{, }\DIFaddend though their very
+	sensitive skin. They were able to listen and engage in the vibrational
+	sensorium just as I do, but through a completely different physiological
+	mechanism. \DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < 	%%%
+\DIFdelend It is reminiscent of one of Oliveros's sconic meditations 
+	which instructs us to \DIFdelbegin \DIFdel{..}\DIFdelend \DIFaddbegin \DIFadd{``Take a walk at night. Walk so silently that the
+	bottoms of your feet become ears.''}\autocite{Oliveros} \DIFadd{Ears are to air
+	microphones as the skin is to contact microphones, like the one I 
+	experienced dug into the ground at the former steel mill. Listening
+	like a worm and listening to worms teaches us about the many 
+	possibilities for radically different forms of listening, but also the
+	real material and social barriers and striations that bar us from or 
+	move us towards these different forms of listening}\DIFaddend .
+
 	\section*{The \textit{Young People's Concerts}: classical music and 
 	mass media}
 
@@ -1319,19 +1431,25 @@
 	CBS, was intended to expose adolescents to classical music by meeting 
 	them where they were in terms of musical understanding. This included  
 	explaining concepts in classical music through references to popular 
-	culture.    
+	culture. \DIFaddbegin \DIFadd{The goal of the program was not uplift through classical
+	music, but rather to center pleasure and enjoyment within musical 
+	connoisseurship. Bernstein seemed concerned with music appreciation 
+	for its own sake, separate from the class performance which is so often
+	central to classical music appreciation.      
+}\DIFaddend 
 
-	This program marks a different way of doing classical 
+	This program \DIFdelbegin \DIFdel{marks }\DIFdelend \DIFaddbegin \DIFadd{marked }\DIFaddend a different way of doing classical 
 	music
 	pedagogy. Bernstein was critical of the traditional modes of music 
 	appreciation, which he described as falling either into the categories 
-	of anecdotes and nothing about music, or analysis. He saw the first as 
-	coy and
+	of anecdotes and nothing about music, or \DIFaddbegin \DIFadd{formalistic }\DIFaddend analysis. He saw 
+	the first as coy and
 	the second as dull. Instead, across his pedagogy, he chose to focus on 
 	the mystery of meaning in music. He breaks musical meaning into four 
 	categories: narrative-literary meanings, atmospheric-pictorial meanings,
-	affective-reactive meanings (like triumph or melancholy), and purely 
-	musical meanings.\autocite[14]{Kopfstein}  His pedagogical intention 
+	affective-reactive meanings \DIFdelbegin \DIFdel{(}\DIFdelend like triumph or melancholy\DIFdelbegin \DIFdel{)}\DIFdelend , and purely 
+	musical meanings \DIFaddbegin \DIFadd{such as musical jokes}\DIFaddend .\autocite[14]{Kopfstein}  His 
+	pedagogical intention 
 	was ``to create and recreate a communally engaged 
 	audience''\autocite[51]{Kopfstein} and his goal is reflected in this
 	turn toward this framework which is engaged and analytical, yet 
@@ -1352,7 +1470,7 @@
 	about.''\autocite[71]{Kopfstein}
 	\end{quote}
 
-	Bernstien makes a distinction here between ``pedagogy'' and 
+	\DIFdelbegin \DIFdel{Bernstien }\DIFdelend \DIFaddbegin \DIFadd{Bernstein }\DIFaddend makes a distinction here between ``pedagogy'' and 
 	''education,'' suggesting that education is something more humanistic 
 	and having to do with pleasure and appreciation, rather than learning 
 	for simply pragmatic reasons. Bernsteinian education, which television 
@@ -1380,8 +1498,10 @@
 	understood from a Bourdieusian perspective as simply the investment by 
 	the musician's parent's and teachers in middle-class 
 	ideals.\autocite[7]{Bull}
+	\DIFdelbegin %DIFDELCMD < 
 
-	The idea of classical music providing economic and spiritual uplift from
+%DIFDELCMD < 	%%%
+\DIFdelend The idea of classical music providing economic and spiritual uplift from
 	poverty is perhaps most recently and famously demonstrated in 
 	Venezuela's El Sistema and the propagation of numerous El Sistema 
 	inspired organizations.  In essence, these organizations stipulate that
@@ -1410,7 +1530,8 @@
 	music reinforces structures of power, rather then reinforcing old 
 	narratives about the power of music.\autocite[xiii]{Kopfstein} 
 	In this case, although Bernstein is expanding the discourse of the power
-	of music to these lesser-appreciated art forms, he is inadvertently using
+	of music to these lesser-appreciated art forms, he is inadvertently 
+	using
 	music to reinforce the power of the classical music institutional 
 	ecology---that is, the framework of organizations that make up the 
 	classical music world.\autocite[27]{Bull}  
@@ -1441,16 +1562,41 @@
 	television allows for aerial ears to listen to the underground, and the
 	worms hears the aerial listeners listening,    
 
-	\section*{Mass media}
+	\section*{\DIFdelbegin \DIFdel{Mass media}\DIFdelend \DIFaddbegin \DIFadd{The looking is the beauty}\DIFaddend }
 
-	So far, I have looked at \ses as a piece of 
-	children's educational media. At this point, I would like to take 
-	a step back and look at the program as a piece of art---as a piece of
-	popular art. Frankfurt school Marxists and cultural theorists Theodore 
-	Adorno and Max Horkheimer famously problematized popular art and mass 
-	media under late stage capitalism in a chapter of their book 
+	\DIFdelbegin \DIFdel{So far, I have looked at \ses as a piece of children's educational media . At this point, I would like to take 
+	a step back and 
+	look at the program as a piece of art---as a piece of popular art . Frankfurt school Marxists and cultural theorists Theodore 
+	Adorno and Max }\DIFdelend \DIFaddbegin \DIFadd{I have written against the idea of art as uplift. However, art and
+	media---two terms which I will not draw a distinction between---can
+	change how a viewer or participant perceives the world. Visual artist
+	David Hockney, whose art addresses questions of perspective, vision, 
+	and the nature of looking, said, comparing his painting 
+	}\textit{\DIFadd{Yorkshire Landscapes}} \DIFadd{to television that ``if you show the world
+	better, it's more beautiful, a lot more beautiful. The process of 
+	looking is the beauty.''}\autocite[100]{Odell} \DIFadd{This remark points to the
+	way that art and media can change the way that we perceive the world to
+	ways of looking that are themselves beautiful. This seems to have been
+	largely the goal of Bernstein, who sought to give young people new tools
+	for understanding music of all kinds. In a more abstract sense, we see
+	this same behavior on \ses with the forms of listening and 
+	}\textit{\DIFadd{listening with}} \DIFadd{that it showcases. Ultimately, as we will
+	see in part II of this paper, the looking as the beauty can provide
+	spaces for social discourse and change. 
+}
+
+	\DIFadd{This may share some superficial similarity to the theories of mass media
+	posited by Theodore Adorno and Max Horkheimer's ideals of ``emancipatory
+	art,'' though I find emancipatory art to be a 
+	misguided concept deeply rooted in classism and ideas of classical music
+	as uplift. Art and media have liberatory potential, but not in the
+	Adornian sense. 
+	}
+
+	\DIFadd{Adorno and }\DIFaddend Horkheimer famously problematized popular art and
+	mass media under late stage capitalism in a chapter of their book 
 	\textit{Dialectic of Enlightenment} titled ``The culture industry: 
-	Enlightenment as mass deception.''\autocite{Adorno} Late capitalism'' 
+	Enlightenment as mass deception.''\autocite{Adorno} \DIFaddbegin \DIFadd{``}\DIFaddend Late capitalism'' 
 	or ``late stage capitalism'' 
 	refers to an economy in the trajectory of capitalism where the 
 	concentration of capital has already taken place and the problem 
@@ -1504,9 +1650,11 @@
 	Both authors put stock in the power of ``emancipatory'' art to expand 
 	the consciousness. I find emancipatory art in this context to be a 
 	misguided concept deeply rooted in classism and ideas of classical music
-	as uplift. While Baugh may argue against the classist aspects of Adorno's
-	characterizations of emancipatory art, he only reinforces ideas of music 
-	as uplift and as having the ability to expand class consciousness.
+	as uplift. While Baugh may argue against the classist aspects of 
+	Adorno's
+	characterizations of emancipatory art, he only reinforces ideas of music
+	\DIFaddbegin \DIFadd{in general 
+	}\DIFaddend as uplift and as having the ability to expand class consciousness.
 	For these reasons, I do not 
 	find the idea of art as either emancipatory or pacifying a useful
 	category for analysis, though this is not at all to say that children
@@ -1530,9 +1678,10 @@
 	While I think that emancipatory art is a misguided ideal, I find value 
 	in the idea that art can cultivate in the viewer new ways of observing
 	and sensing the world and that this is seen in, and was the ultimate
-	goal of, Bernstein's public pedagogy as well as the musical education 
-	on \textit{Sesame Street}. It doesn't have to be difficult, 
-	but it helps to be unfamiliar. 
+	goal of, Bernstein's public pedagogy \DIFaddbegin \DIFadd{with its focus on teaching musical
+	connoisseurship and appreciation }\DIFaddend as well as the musical education 
+	on \textit{Sesame Street} \DIFdelbegin \DIFdel{. It doesn't have to be difficult, 
+	but it helps to be unfamiliar}\DIFdelend \DIFaddbegin \DIFadd{and its goals of socio-emotional learning}\DIFaddend . 
 
 	\newpage
 	\thispagestyle{empty}
@@ -1548,63 +1697,75 @@
 	\section*{Listening \textit{with} the Music: Ecological Humor} 
 
 	Victor Borge was a Danish pianist of Jewish heritage. He was known for 
-	parodying the names of composers and unexpectedly inserting moving 
-	performances of the classics into what were otherwise comedy 
-	routines. \DIFdelbegin %DIFDELCMD < \autocite[255]{Garrett}  
-%DIFDELCMD < 
-
-%DIFDELCMD < 	%%%
-\DIFdelend \DIFaddbegin \DIFadd{During his career in the United 
+	parodying the names of composers and unexpectedly inserting 
+	\DIFdelbegin \DIFdel{moving 
+	}\DIFdelend \DIFaddbegin \DIFadd{recital-style 
+	}\DIFaddend performances of the classics into what were otherwise comedy 
+	routines. During his career in the United 
 	States, which spanned from the 1940s to his death in 2000, Borge
 	made numerous appearances on radio, television, and Broadway. 
-	}\DIFaddend Borge stressed that he never makes fun of the music, but rather makes 
-	``fun with the music\DIFdelbegin \DIFdel{'' and thought that this attitude had brought new 
-	listeners to classical music, who would go back to the concert hall for
-	more music without the comedy.}%DIFDELCMD < \autocite[256]{Garrett}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \DIFadd{.'' }\autocite[255]{Garrett}
- \DIFaddend 
+	Borge stressed that he never makes fun of the music, but rather makes 
+	``fun with the music.'' \autocite[255]{Garrett}
 
-	Making fun \textit{with} the music resonates with Lockwood's 
-	``listening with.'' What Lockwood means by this is that in any 
-	environment you are \DIFdelbegin \DIFdel{not listening to , say, the birds , but rather 
-	listening 
-	along with them, because }\DIFdelend \DIFaddbegin \DIFadd{are not alone when you listen to the birds and the
-	insects, are not listening }\textit{\DIFadd{to}} \DIFadd{the ecosystem, but listening 
-	}\textit{\DIFadd{with}} \DIFadd{it, for as you listen to the the birds and insects }\DIFaddend they
-	are listening to \DIFdelbegin \DIFdel{, and listening
-	to you}\DIFdelend \DIFaddbegin \DIFadd{you and to eachother}\DIFaddend . This mode of listening dissolves
-	 \DIFdelbegin \DIFdel{some of }\DIFdelend the direct 
+	\DIFaddbegin \DIFadd{Parodies of classical music such as those in the Marx Brothers's 
+	}\textit{\DIFadd{A Night at the Opera}} \DIFadd{or the animated short film 
+	}\textit{\DIFadd{What's Opera, 
+	Doc?}} \DIFadd{uphold the status of classical music as much as they deride it. By
+	setting up the elite musical culture as an object worthy of deflation, 
+	its status and spectacle are preserved in their high 
+	place.}\autocite[252]{Garrett} \DIFadd{The representations of classical music in
+	}\textit{\DIFadd{A Night at the Opera}} \DIFadd{simultaneously ``punches up'' to classical
+	music, mocking its elitism, while it bridged the divide between elite and
+	pop culture. While this was entertaining to those outside of the 
+	classical world, it offered nuanced entertainment to those with a 
+	knowledge and admiration of opera, especially given that classical
+	music parodies are often inside jokes meant for those in the
+	know.}\autocite[251]{Garrett} 
+
+	\DIFaddend Making fun \textit{with} the music resonates with Annea Lockwood's 
+	``listening with''---the idea that in any 
+	environment you are are not alone when you listen to the birds and the
+	insects, are not listening \textit{to} the ecosystem, but listening 
+	\textit{with} it, for as you listen to the the birds and insects they
+	are listening to you and to eachother. This mode of listening dissolves
+	 the direct 
 	subject-object relationships of ``listening to,'' favoring a more 
-	reciprocal relationship of co-awareness.  When Borge is making fun 
+	reciprocal relationship of co-awareness and I use this phrase to
+	describe situations and practices of listening which engage in this
+	mutual sonic awareness.  When Borge is making fun 
 	\textit{with}, rather than \textit{of} the music, he is, like Lockwood, 
-	dismantling subject-object \DIFdelbegin \DIFdel{relationships---in this case they would be 
-	}\DIFdelend \DIFaddbegin \DIFadd{relationships---instead of }\DIFaddend the performer and 
-	\DIFdelbegin \DIFdel{the }\DIFdelend audience as subjects ridiculing the musical object \DIFdelbegin \DIFdel{---and instead 
-	creating }\DIFdelend \DIFaddbegin \DIFadd{they instead 
-	cultivate }\DIFaddend an environment of co-creation where the 
+	dismantling subject-object relationships---instead of the performer and 
+	audience as subjects ridiculing the musical object they instead 
+	cultivate an environment of co-creation where the 
 	objectivity of the musical and comedic act are not, in a sense, 
 	\textit{focused} on the work of art as funny object, but on the 
 	relationship as the source of humor. That is, Borge is not making of 
 	Mozart himself when he parodies his name, nor is he really deriding the
- 	classical music establishment, for as Garrett argues, classical music 
-	parodies uphold the status quo\DIFdelbegin \DIFdel{: 
-}\DIFdelend \DIFaddbegin \DIFadd{. 
-}\DIFaddend 
+ 	classical music establishment, for as Charles Hiroshi Garrett argues in	
+	``Shooting the Keys,'' a paper on the Marx brothers and musical parody, 
+	parodies of classical music uphold the status 
+	quo.\autocite[252]{Garrett}
 
-	Parodies of classical music such as those in the Marx Brothers's *A 
-	Night at the Opera* or the animated short film \textit{What's Opera, 
-	Doc?} uphold the status of classical music as much as they deride it. By
+	\DIFdelbegin \DIFdel{Parodies of classical music such as those in the Marx Brothers's 
+	}\textit{\DIFdel{A Night at the Opera}} %DIFAUXCMD
+\DIFdel{or the animated short film 
+	}\textit{\DIFdel{What's Opera, 
+	Doc?}} %DIFAUXCMD
+\DIFdel{uphold the status of classical music as much as they deride it. By
 	setting up the elite musical culture as an object worthy of deflation, 
 	its status and spectacle are preserved in their high 
-	place.\autocite[252]{Garrett} The representations of classical music in
-	\textit{A Night at the Opera} simultaneously ``punches up'' to classical
+	place.}%DIFDELCMD < \autocite[252]{Garrett} %%%
+\DIFdel{The representations of classical music in
+	}\textit{\DIFdel{A Night at the Opera}} %DIFAUXCMD
+\DIFdel{simultaneously ``punches up'' to classical
 	music, mocking its elitism, while it bridged the divide between high and
 	low culture. While this was entertaining to those outside of the 
 	classical world, it offered nuanced entertainment to those with a 
-	knowledge and admiration of opera.\autocite[251]{Garrett} 
+	knowledge and admiration of opera.}%DIFDELCMD < \autocite[251]{Garrett} 
+%DIFDELCMD < 
 
-	Borge said that it was generally the case that those who laughed
+%DIFDELCMD < 	%%%
+\DIFdelend Borge said that it was generally the case that those who laughed
 	the most at his performances were those who were more musically 
 	educated. In order to be successful, all parody and satire require that
 	the audience has a certain level of cultural 
@@ -1613,51 +1774,47 @@
 	music and those who are not. He said ``my jokes must be understood by 
 	everybody. Nobody must be bored.''\autocite[256]{Garrett} 
 
- 	\DIFdelbegin \DIFdel{Borges }\DIFdelend \DIFaddbegin \DIFadd{Borge }\DIFaddend is engaged in a refocussing of the subject-object 
+ 	Borge is engaged in a refocussing of the subject-object 
 	relationship to one which is more reciprocal and circular. The entire 
 	audience, who he was adamant about not leaving behind comedically, are
 	in a sense gathered around the piano, having fun with Mozart, but not at
-	\DIFdelbegin \DIFdel{his expense. What Borge described as }\DIFdelend \DIFaddbegin \DIFadd{Mozart's expense. Part of the humor is accomplished by making himself
+	Mozart's expense. Part of the humor is accomplished by Borge making 
+	himself
 	the object of ridicule and self depreciation, as he clowns around the
 	musical object, playing multiple pianos, falling off the piano bench,
 	and reads music in strange and unusual ways. In a sense, he plays an
-	}\textit{\DIFadd{anti-virtuoso}}\DIFadd{, who is highly skilled, but has little sense. 
+	\textit{virtuoso-fool}, who is highly skilled, but has little sense. 
 	In one performance, he keeps overshooting his octave leaps and missing
 	the right edge of the piano, so he gets up and moves the whole piano
 	over a foot to compensate. 
-}
 
-	\DIFadd{Borge uses the music not as the object of the humor, but instead
+	Borge uses the music not as the object of the humor, but instead
 	showcases the music while he uses it as a structure
 	around which a comedy routine is built. 
-	This is what what Borge called }\DIFaddend ``making fun with the music\DIFdelbegin \DIFdel{'' }\DIFdelend \DIFaddbegin \DIFadd{.'' It }\DIFaddend is a 
+	This is what what Borge called ``making fun with the music.'' It is a 
 	restructuring
 	of subject object relationships akin that that of Lockwood's ``listening
 	with.'' He is not looking at the music, pointing at it, and laughing at
 	its expense, rather he is engaging with it, listening to it, and 
 	constructing something new in collaboration with it. In general parody 
 	tends to highlight certain qualities and virtues of the music, even if 
-	it makes fun of others. \DIFaddbegin \DIFadd{Borge thought that this attitude had brought
+	it makes fun of others. Borge thought that this attitude had brought
 	new listeners to classical music, who would go back to the concert hall 
-	for more music without the comedy.}\autocite[256]{Garrett} \DIFadd{As with 
+	for more music without the comedy.\autocite[256]{Garrett} As with 
 	Bernstein, we see the use of something accessible---humor,
 	pedagogy---as a gateway into classical music.
-}\DIFaddend 
 
 	A similar style of ``making fun with the music'' as undertaken by 
 	Borge can be seen on \textit{Sesame Street}. Some of the exact same 
 	devices are used, such as the parodying of the names of classical 
-	composers \DIFdelbegin \DIFdel{, but more significantly, }\DIFdelend \DIFaddbegin \DIFadd{and physical clowning. More significantly, however, }\DIFaddend there is 
+	composers and physical clowning. More significantly, however, there is 
 	a shared sense of using
-	parody to uphold the \DIFaddbegin \DIFadd{aesthetic and cultural }\DIFaddend status of the music \DIFdelbegin \DIFdel{) and the ways that this shifts
-	subject-object relationships and allows for listening /textit}%DIFDELCMD < {%%%
-\DIFdel{with }%DIFDELCMD < } %%%
-\DIFdel{the music}\DIFdelend \DIFaddbegin \DIFadd{while
+	parody to uphold the aesthetic and cultural status of the music while
 	changing the subject-object relationships around and within it. 
-	These shifts allow for listening }\textit{\DIFadd{with}} \DIFadd{the music. This is one
+	These shifts allow for listening \textit{with} the music. This is one
 	of the prevalent forms
-	of classical virtuosity expressed on the program: }\textit{\DIFadd{virtuosity as 
-	listening with}}\DIFadd{, expressed through the cultivation of co-mutual
+	of classical virtuosity expressed on the program: \textit{virtuosity as 
+	listening with}, expressed through the cultivation of co-mutual
 	listening. Of course, the showrunners are not trying to
 	get children into concert halls in the way that Borge and the
 	classical establishment which supported him were with an adult 
@@ -1666,24 +1823,24 @@
 	relationships which it brings about. Similar to, but different from the
 	gateways of
 	accessibility created by Bernstein and Borge, on \ses, humor creates 
-	space for }\textit{\DIFadd{engagement}} \DIFadd{with music which is otherwise culturally
+	space for \textit{engagement} with music which is otherwise culturally
 	considered exclusive and esoteric. Play creates a momentary world 
 	where the rules of classical music are different and one can play 
 	at a concert hall with improvised instruments, unheard-of composers,
 	and strange musical collaborators. This is the geophone of the
-	}\textit{\DIFadd{worm listener}}\DIFadd{. Play allows one to enter, listen to, and be 
+	\textit{worm listener}. Play allows one to enter, listen to, and be 
 	listened to by the musical underworld of classical music which is so 
-	often out of limits}\DIFaddend .
+	often out of limits.
 
-	\section*{``\textit{Pretty Great} Performances:'' \DIFaddbegin \DIFadd{play, parody, and 
-	}\DIFaddend classical music \DIFdelbegin \DIFdel{parody }\DIFdelend on \ses}
+	\section*{``\textit{Pretty Great} Performances:'' play, parody, and 
+	classical music on \ses}
 
 	Recall the particular design constraints of music on children's
 	television faced by the writers of \textit{Sesame Street}: 	
-	They wanted to expose children to new ``serious'' \DIFdelbegin \DIFdel{music without }\DIFdelend \DIFaddbegin \DIFadd{music---that is, music
-	made for adults rather than children---without }\DIFaddend boring
+	They wanted to expose children to new ``serious'' music---that is, music
+	made for adults rather than children---without boring
 	them, but also without boring their parents, who they hoped would be 
-	watching along\DIFdelbegin \DIFdel{with them}\DIFdelend . In the words of Victor Borge ``nobody must
+	watching along. In the words of Victor Borge ``nobody must
 	be bored.'' One solution to this problem of two audiences is parody,
 	for example the aforementioned performance by Norah Jones, where she
 	parodies her own work. A related technique was used during virtuoso 
@@ -1693,38 +1850,35 @@
 	``Pretty Great Performances'' concert series---a parody of the New York
 	Philharmonic's ``Great Performances'' series---host ``Phil Harmonic'' 
 	introduces Galway and the ``works of the great composer, Johan Sebastian
-	Fox.'' \DIFdelbegin \DIFdel{In this performance, }\DIFdelend Galway delivers an impressive flute 
+	Fox.'' Galway delivers an impressive flute 
 	performance to the accompaniment of a chamber ensemble of animal 
 	puppets, all quacking and barking along in strict 
 	counterpoint.\autocite{Galway2}
 
         While the Jones and Galway performances are obviously very different, 
-	they both take the form of a juxtaposition of \DIFdelbegin \DIFdel{serious music and 
-	performances with
-	}\DIFdelend \DIFaddbegin \DIFadd{``serious'' music and 
+	they both take the form of a juxtaposition of ``serious'' music and 
 	performances---that is music primarily for and by adults, often with
 	implications of listening behaviour such as dressing up and listening 
-	attentively---with }\DIFaddend contexts or lyrical contents which are inappropriate 
+	attentively---with contexts or lyrical contents which are inappropriate 
 	for the genera.\footnote{See also, Ostrofsky,  ``\textit{Sesame Street}
-	as a Musical Comedy-Variety Show,'' 18.} \DIFdelbegin \DIFdel{or}\DIFdelend \DIFaddbegin \DIFadd{Or}\DIFaddend , alternatively, silly music
-	\DIFaddbegin \DIFadd{is presented }\DIFaddend in serious contexts such as the concert hall. This 
+	as a Musical Comedy-Variety Show,'' 18.} Or, alternatively, silly music
+	is presented in serious contexts such as the concert hall. This 
 	virtuosic whimsy 
 	works because it showcases skilled performances and exposes children to
 	music which is perceived as having quality, while being varied enough 
 	to hold their attention, all the while being amusing to any parents who 
-	are present. \DIFaddbegin \DIFadd{This not only exposes children to music, but moreover fills
+	are present. This not only exposes children to music, but moreover fills
 	the basic goals of the program by providing a place where 
 	social-emotional skills can be modeled through the structure of
 	classical music. Akin to Borge's use of classical music as structural
 	center and aesthetic object around which to center comedy, \ses 
 	uses classical music in the same way, in order to provide a place for
 	the modeling of social-emotional skills. Recall Evelyn Glennie's 
-	onstage conflict with Linda---a lesson in how }\textit{\DIFadd{not}} \DIFadd{to listen
+	onstage conflict with Linda---a lesson in how \textit{not} to listen
 	and a satire of unfair play. 
-}\DIFaddend 
 
-	\DIFdelbegin \DIFdel{In general, this virtuosic whimsy is far }\DIFdelend \DIFaddbegin \DIFadd{This is an example of an enduring aspect of musical guest performances
-	on }\textit{\DIFadd{Sesame Street}} \DIFadd{and its presentation of virtuosity: adults 
+	This is an example of an enduring aspect of musical guest performances
+	on \textit{Sesame Street} and its presentation of virtuosity: adults 
 	pretending to be children pretending
 	to be adults. In order to model adult activities and culture through the
 	emotional lens of children, adult stars act like children who are 
@@ -1734,35 +1888,26 @@
 	competent and skilled, yet vulnerable, curious, and sometimes immature.  
 	``Childhood'' as a period of life separate from infancy, adolescence, 
 	or youth did not begin to appear as an idea until the Renaissance, and
-	not in its present form until industrialization.}\autocite[13]{Illich}
-	\DIFadd{These stars point to and perform childhood as instead a fundamental 
+	not in its present form until industrialization.\autocite[13]{Illich}
+	These stars point to and perform childhood as instead a fundamental 
 	aspect of human nature: everyone has some child-ness in them and some
-	more than others. While it is more present it youths, it is as unfair
-	to say that adolescence is characterized by childhood as it is to say
-	that old age is characterized by chronic pain. Rather than encouraging
+	wear it on their sleeves more than others. Rather than encouraging
 	kids to grow up and act like adults, virtuosic whimsy places real value
 	in certain aspects of childlike behavior.
-}
 
-	\DIFadd{In general, virtuosic whimsy---the combination of highly cultivated
+	In general, virtuosic whimsy---the combination of highly cultivated
 	skill with contexts and actions which are comically at odds with the
 	seriousness that is expected for performers at this skill level--- is 
-	}\DIFaddend more pronounced in performances	of classical music than popular music.
-	\DIFaddbegin \DIFadd{This is likely just because classical music is itself associated more
+	more pronounced in performances	of classical music than popular music.
+	This is likely just because classical music is itself associated more
 	with an aesthetics of solemn ritual than any other music. It as a point
 	around which parody can easily be made, especially for children whose
 	primary cultural understanding of classical music is that it is 
 	``serious'', ``fancy'', and 
 	exclusive. In order to shed this image of classical music, it is often 
-	expressed and parodied as }\textit{\DIFadd{play}}\DIFadd{. }\DIFaddend In another appearance on 
+	expressed and parodied as \textit{play}. In another appearance on 
 	``Pretty Great Performances,'' a tuxedoed Galway performs a duet for 
-	flute and pool toy.\autocite{Galway1} \DIFdelbegin \DIFdel{Compare this to Norah Jones's performance 
-	where she parodies her lyrics, but her piano and voice are backed by her
-	normal jazz combo. While much of the music on }\textit{\DIFdel{Sesame Street}} 
-	%DIFAUXCMD
-\DIFdel{expresses virtuosic whimsy, classical music in particular is expressed 
-	as }\textit{\DIFdel{play}}%DIFAUXCMD
-\DIFdel{. In the Galway performance, his }\DIFdelend \DIFaddbegin \DIFadd{His }\DIFaddend duet partner, Sesame 
+	flute and pool toy.\autocite{Galway1} His duet partner, Sesame 
 	Street inhabitant Maria Figueroa,\autocite{Maria} plays a literal toy. 
 	Part of this skit, ostensibly, is simply to demonstrate to children that
 	air is needed to play the flute just as it is needed to fill a swim 
@@ -1774,133 +1919,124 @@
 	esoteric. Like Galway, Maria is clothed in concert dress and taking part
 	in the pomp and circumstance, however, what they are doing is not 
 	ritual, but play. Virtuosic whimsy allows for classical music to retain 
-	its cultural status, \DIFdelbegin \DIFdel{but shed its 
-	exclusivity}\DIFdelend \DIFaddbegin \DIFadd{practices, and aura, but crack open its 
+	its cultural status, practices, and aura, but crack open its 
 	exclusivity: the pomp and circumstance, serious atmosphere, 
 	and the expectations of time devoted to the cultivation of instrumental
 	skill---which are all ultimately a stand-in for 
-	class---}\autocite[7]{Bull} \DIFadd{become themselves a thing of play, 
-	deconstructed and sandboxed}\DIFaddend . 
+	class---\autocite[7]{Bull} become themselves a thing of play, 
+	deconstructed and sandboxed. 
 
 	\section*{Authenticity}
 
-	An appearance by \DIFdelbegin \DIFdel{Yo-yo }\DIFdelend \DIFaddbegin \DIFadd{Yo-Yo }\DIFaddend Ma on the program reveals the unusual status 
+	An appearance by Yo-Yo Ma on the program reveals the unusual status 
 	which ``authenticity'' has on \textit{Sesame Street}. In a similar 
 	skit to that of Galway at ``Barn-egie Hall,'' Ma plays the 
 	``Beethoven quartet for two honkers, dinger, and cello,'' 
-\DIFdelbegin \DIFdel{Written notby ``Ludwig Van }\DIFdelend \DIFaddbegin 
 
 	\begin{quote}
 
-	\DIFadd{The scene opens with the honkers---Muppets with bulbous noses and
+	\DIFaddbegin \ttfamily
+
+	\DIFaddend The scene opens with the honkers---Muppets with bulbous noses and
 	trumpet-shaped horns on their head---slapping their faces and honking 
 	while a dinger---a Muppet with a bell on its head---stands between them.
 	Big bird, dressed as a conductor shakes his head as they honk. Bob the
 	music teacher enters stage right 
-}
 
-	\DIFadd{``Hi Big Bird.''
-}
+	``Hi Big Bird.''
 
-	\DIFadd{``Oh, hi Bob.''
-}
+	``Oh, hi Bob.''
 
-	\DIFadd{``What's uhh, what's going on?'' he asks with a shrug, hands in pockets.
-}
+	``What's uhh, what's going on?'' he asks with a shrug, hands in pockets.
 
-	\DIFadd{``They are getting ready to perform a quartet.''
-}
+	``They are getting ready to perform a quartet.''
 
-	\DIFadd{``A honker and dinger quartet? Sounds interesting, Big Bird'' Bob 
+	``A honker and dinger quartet? Sounds interesting, Big Bird'' Bob 
 	chuckles.
-}
 
-	\DIFadd{``Hmmm... You think it's silly, huh? Well, let me tell you Bob, they 
-	just rehearsed and they sounded }\textit{\DIFadd{beautiful}}\DIFadd{!''
-}
+	``Hmmm... You think it's silly, huh? Well, let me tell you Bob, they 
+	just rehearsed and they sounded \textit{beautiful}!''
 
-	\DIFadd{``Well, beautiful or not, Big Bird, it can't be a quartet because a 
+	``Well, beautiful or not, Big Bird, it can't be a quartet because a 
 	quartet needs four musicians, and I only see one, two, three.'' The 
 	camera cuts to the honkers and dingers who count themself as Bob counts.
-}
 
-	\DIFadd{``Ahh, but number four is coming---right now. So if you just take your 
+	``Ahh, but number four is coming---right now. So if you just take your 
 	seat''---Big bird pushes Bob out of the frame and off the stage---I will
 	introduce him."
-}
 
-	\DIFadd{Turning to the audience, Big Bird announces: ``The Sesame Street Chamber
+	Turning to the audience, Big Bird announces: ``The Sesame Street Chamber
 	Music Society is proud to present our very special guest: Yo-Yo Ma!''
-}
 
-	\DIFadd{With applause, Ma enters stage left in a tuxedo with cello in hand, and
+	With applause, Ma enters stage left in a tuxedo with cello in hand, and
 	turns to the audience ``We will perform for you, the Beethoven quartet 
 	for two honkers, dinger, and cello.'' 
-}
 
-	\DIFadd{The camera cuts to a close up of Bob, who puts his hand on his chin and 	wonders aloud ``He wrote that, Ludwig van }\DIFaddend Beethoven, the famous 
-	composer\DIFdelbegin \DIFdel{,'' but }\DIFdelend \DIFaddbegin \DIFadd{?''
-}
+	The camera cuts to a close up of Bob, who puts his hand on his chin and 	wonders aloud ``He wrote that, Ludwig van Beethoven, the famous 
+	composer?''
 
-	\DIFadd{``No,'' Ma replies, }\DIFaddend ``Murray Beethoven, the famous honker\DIFdelbegin \DIFdel{.''
-}%DIFDELCMD < \autocite{MaHonkers} %%%
-\DIFdel{In this performance, 
-	Ma demonstrates }\DIFdelend \DIFaddbegin \DIFadd{!''
-}
+	``No,'' Ma replies, ``Murray Beethoven, the famous honker!''
 
-	\DIFadd{Motioning toward the green honker to his left, the Muppet bows to great 
+	Motioning toward the green honker to his left, the Muppet bows to great 
 	applause.
-}
 
-	\DIFadd{Ma turns towards the three other performers, who gather near each other
+	Ma turns towards the three other performers, who gather near each other
 	in preparation. Murray Beethoven raises his chin to count them all off, 
 	Ma replies with the same gesture, and they begin to play with a clean 
 	downbeat. Ma plays melodic material on the cello, demonstrating 
-	}\DIFaddend impressive technical ability \DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{with }\DIFaddend playing double stops and fast 
-	\DIFdelbegin \DIFdel{melodies }\DIFdelend \DIFaddbegin \DIFadd{passages }\DIFaddend high on the fingerboard. \DIFdelbegin \DIFdel{Accompanying this display of 
-	skill are three puppets, two ``honkers '' who each have a pair of cranial
-	protrusions shaped like bicycle horns which honk when they press on 
-	their nose, and 
-	one ``dinger'' with a bell on its head. What they are 
-	playing sounds very common practice era, and is an effective pastiche. }\DIFdelend \DIFaddbegin \DIFadd{The honkers and dinger have three
+	impressive technical ability with playing double stops and fast 
+	passages high on the fingerboard. The honkers and dinger have three
 	notes between them and provide counterpoint and accompaniment in a tight
 	coordination. During the performance, Ma orients himself toward the 
 	other players. Although he looks away from them to consult his music, 
 	which is only half in the shot, he leans towards them as he plays, and 
 	spends about half the performance turned toward them making direct 
 	eye-contact. The dingers and honkers themselves are oriented 
-	semi-circularly in the way that singers often do.
-}\DIFaddend 
+	semi-circularly in the way that \DIFdelbegin \DIFdel{singers }\DIFdelend \DIFaddbegin \DIFadd{chamber ensembles }\DIFaddend often do.
 
-	\DIFdelbegin \DIFdel{What we see in both }\DIFdelend \DIFaddbegin \DIFadd{They finish with a triumphant sonority and the audience applauses. Ma 
-	rises to shake the dinger's and honker's hands.}\autocite{MaHonkers} 
+	They finish with a triumphant sonority and the audience applauses. Ma 
+	rises to shake the dinger's and honker's hands.\autocite{MaHonkers} 
 
 	\end{quote}
 
-	\DIFadd{This performance demonstrates a playing and listening which is highly 
+	This performance demonstrates a playing and listening which is highly 
 	conversational. We can see this a foil to lesson on how not to listen 
 	provided by Evelyn Glennie. Here, everyone takes their turn without a 
 	fuss, and communicate constantly through non-verbal cues, which render 
 	their intense listening highly legible. In terms of whimsical
 	virtuosity, we see Yo-Yo Ma performing with conviction and commitment 
 	something which Bob, who is often rather musically conservative compared
-	to the Muppets, sees as silly. Both }\DIFaddend the Ma and Galway performances 
-	\DIFdelbegin \DIFdel{is a certain 
-	}\DIFdelend \DIFaddbegin \DIFadd{display a }\DIFaddend whimsical virtuosity, where players \DIFdelbegin \DIFdel{may be highly skilled , but are not }\DIFdelend \DIFaddbegin \DIFadd{are highly skilled and 
-	engaged in the performance, but do not take part in the }\DIFaddend somber and 
-	serious \DIFdelbegin \DIFdel{. }\DIFdelend \DIFaddbegin \DIFadd{performance aesthetics common to classical music. This manifests
+	to the Muppets, sees as silly as he defaults to a stodgy adult 
+	perspective. \DIFaddbegin \DIFadd{In this performance Ma and the ensemble break from the 
+	flow of balanced phrases within what what sounds like a rounded binary 
+	form for call-and-response exchanges between cello and the Muppets'
+	ensemble of children's toys. These call and response passages are 
+	isolated exchanges that sit outside of the underlying phrase structure 
+	and highlight Ma's
+	willingness to }\textit{\DIFadd{play.}} \DIFadd{The professional, grown up, Ma and his
+	}\textit{\DIFadd{very}} \DIFadd{expensive cello}\autocites[I haven't been able to 
+	find what instrument Ma was playing at the time this skit was shot in 
+	1985, but the instrument that he
+	famously forgot in the back of a NYC taxi a decade later was a 1733 
+	Stradivarius valued
+	at \$2.5 million.]{Times} \DIFadd{break the continuity 
+	of the classical piece in 
+	order to engage in conversation with the sorts of sounds you would
+	find in a child's toybox or attached to their tricycle. }\DIFaddend Both the Ma and
+	Galway performances 
+	display a whimsical virtuosity, where players are highly skilled and 
+	engaged in the performance, but do not take part in the somber and 
+	serious performance aesthetics common to classical music. This manifests
 	both through their individual performances and the situational humor of
 	toy instruments and puppet collaborators. 
-}
 
-	\DIFaddend This particular blend of virtuosity and situational
+	This particular blend of virtuosity and situational
 	humor brings into the mix questions of authenticity: In playing the
 	music of ``Murray Beethoven, the famous honker,'' Ma is represented as a
 	serious and skillful interpreter of music, but not as a voice from the 
 	past. The classical canon seems less canonic on \textit{Sesame Street}.
-
-	\DIFaddbegin \DIFadd{Authenticity is a tricky subject.
-        }\DIFaddend In her article ``Staging Authenticity'' Karen Leistra-Jones conceives of
+	Authenticity as a category is also destabilized, though it is a fraught 	subject to begin with. 
+        In her article ``Staging Authenticity'' Karen Leistra-Jones conceives of
 	19th century authenticity as a performative category, not a stable 
 	category which some musicians had and some 
 	lacked.\autocite[400]{Jones2013} In other words, authenticity is 
@@ -1925,18 +2061,17 @@
 	Beethoven, the famous honker,'' Ma's image as an interpreter of a 
 	venerable canon is redirected. Whoever composed this piece is more or 
 	less meaningless to the skit's young audience. Most children at this age
-	would not \DIFaddbegin \DIFadd{be }\DIFaddend interested in or privy to the classical canon which 
+	would not be interested in or privy to the classical canon which 
 	Beethoven 
 	represents, so the voice from the past---the authenticity of which is 
 	created in the locus of the audience---simply does not exist. Nor does 
-	\textit{Sesame Street} try to teach \DIFdelbegin \DIFdel{this canon }\DIFdelend \DIFaddbegin \DIFadd{the classical canon from this 
-	valence}\DIFaddend . The emphasis here is on 
-	classical music as \DIFdelbegin \DIFdel{something funand approachable, not steeped in 
-	}\DIFdelend \DIFaddbegin \DIFadd{as set of practices which are fun, approachable, and 	based in attentive and co-mutual listening. While classical music on 
+	\textit{Sesame Street} try to teach the classical canon from this 
+	valence. The emphasis here is on 
+	classical music as as set of practices which are fun, approachable, and 	based in attentive and co-mutual listening. While classical music on 
 	\ses means
 	dressing up in traditional garb and putting on a performance in a 
 	concert hall, it includes toys for instruments and is steeped in 
-	exploratory play, rather than }\DIFaddend tradition and arcane cultural memory. 
+	exploratory play, rather than tradition and arcane cultural memory. 
 	Authenticity and composers' 
 	intentions are not emphasized on \textit{Sesame Street} because these 
 	are things which are as much the work of the audience as they are the 
@@ -1947,33 +2082,26 @@
 
 	\section*{Virtuosity}
 
-	\DIFdelbegin \DIFdel{Sesame Street }\DIFdelend \DIFaddbegin \textit{\DIFadd{Sesame Street}} \DIFaddend does not present a homogeneous image of 
+	\textit{Sesame Street} does not present a homogeneous image of 
 	virtuosity. This 
 	is likely due to their diverse set of guest stars. Even between 
 	different skits featuring the same artist we see them play different 
 	generas and cut different images of virtuosity.
 
-	In the presentation of classical virtuosity on \DIFdelbegin \DIFdel{\ses}\DIFdelend \DIFaddbegin \textit{\DIFadd{Sesame Street}}\DIFaddend ,
+	In the presentation of classical virtuosity on \textit{Sesame Street},
 	we see a number
-	of regularly used techniques: \DIFdelbegin \DIFdel{radical cosmopolitanism}\DIFdelend \DIFaddbegin \DIFadd{multi-traditionalism}\DIFaddend , childlike 
+	of regularly used techniques: multi-traditionalism, childlike 
 	playfulness and vulnerability, and general approachability. These 
 	techniques establish classical music as something other than the stodgy 
 	music of plaster busts and starched collars. Bob the music teacher and 
 	his establishment ideas are often in tension with the desires of the 
-	\DIFdelbegin \DIFdel{classical performers }\DIFdelend \DIFaddbegin \DIFadd{actual celebrity classical musicians }\DIFaddend who appear on the program\DIFdelbegin \DIFdel{In this way, \ses 
-	dissolves the exclusivity of classical music and presents it instead as
-	something fun and accessible. \ses does not just showing kids ``what 
-	quality is,'' but perhaps more importantly, demonstrates that a music's
-	association with class is not a marker of inaccessibility}\DIFdelend \DIFaddbegin \DIFadd{. 
+	actual celebrity classical musicians who appear on the program. 
 	To this effect, classical musicians on \ses demonstrate their 
-	virtuosity by }\textit{\DIFadd{not playing}} \DIFadd{classical music}\DIFaddend . Sesame
+	virtuosity by \textit{not playing} classical music. Sesame
 	Street looks a lot like a musical Utopia, where all kinds can play 
 	together without the boundaries of class, race, ethnicity, or 
-	species---the limits of \DIFdelbegin \DIFdel{which }\DIFdelend \DIFaddbegin \DIFadd{this kind of Utopia }\DIFaddend are discussed in the next 
-	section of this paper. \DIFdelbegin \DIFdel{To this effect, classical musicians on \ses demonstrate their 
-	virtuosity by }\textit{\DIFdel{not playing}} %DIFAUXCMD
-\DIFdel{classical music 
-	}\DIFdelend \DIFaddbegin \DIFadd{Regarding classical music and performers,
+	species---the limits of this kind of Utopia are discussed in the next 
+	section of this paper. Regarding classical music and performers,
 	however, as a part of the program's educational goals of exposure-based
 	music appreciation as well as the social-emotional lessons embedded 
 	in the forms of listening which it teaches, the program uses the 
@@ -1992,33 +2120,37 @@
 	that we can have the aesthetics of classical music 
 	without the exclusivity and class boundaries---without the hours of 
 	violin lessons and investment in middle-class identity---that are 
-	inherent in its rituals}\DIFaddend . 
+	inherent in its rituals. 
 
-	\subsection*{Character Study 1: Yo-Yo Ma \DIFaddbegin \DIFadd{and Virtuosity as 
-	Listening With}\DIFaddend } 
+	\subsection*{Character Study 1: Yo-Yo Ma and Virtuosity as 
+	Listening With} 
 
 	Yo-Yo Ma's individual persona interacts with \textit{Sesame Street}'s
 	educational project to create a diverse presentation of virtuosity. 
-	Between his five appearances on the \DIFdelbegin \DIFdel{show }\DIFdelend \DIFaddbegin \DIFadd{program }\DIFaddend in the 1980s he is shown as 
+	Between his five appearances on the program in the 1980s he is shown as 
 	playing with incredible technical skill and concentration, as 
-	\DIFaddbegin \DIFadd{culturally }\DIFaddend omnivorous, and lastly, using the technique of virtuosic 
+	culturally omnivorous, and lastly, using the technique of virtuosic 
 	whimsy, Ma 
 	takes part in the leveling of classical music. This says a number of 
 	things about Ma and his virtuosity: that it knows no stylistic bounds,
-	that it is internalized, and that though he is virtuosic, he \DIFaddbegin \DIFadd{is 
+	that it is internalized, and that though he is virtuosic, he is 
 	human
-	}\DIFaddend and his art \DIFdelbegin \DIFdel{are human and }\DIFdelend \DIFaddbegin \DIFadd{is }\DIFaddend approachable. All of these are attained via the ways
+	and his art is approachable. All of these are attained via the ways
 	that he is shown listening, whether that is listening 
 	cross-culturally, in an ensemble, or whimsically.  
 
-	In one \DIFdelbegin \DIFdel{of Yo-Yo Ma's appearanceson Sesame Street}\DIFdelend \DIFaddbegin \DIFadd{appearances}\DIFaddend , now posted on the 
+	In one appearances, now posted on the 
 	\ses YouTube channel as ``Sesame Street: Yo Yo Ma: The Jam Session,'' 
 	Ma is absorbed in practicing a somber melody in an alley on one of 
 	\textit{Sesame Street}'s urban sets.
 
 	\begin{quote}	
-	Hoots, the saxophone playing owl, whose accent, vocabulary, and general
-	composure suggest an alignment with African American \DIFdelbegin \DIFdel{culture}\DIFdelend \DIFaddbegin \DIFadd{identity}\DIFaddend , leans out
+\DIFaddbegin 
+
+	\ttfamily
+
+	\DIFaddend Hoots, the saxophone playing owl, whose accent, vocabulary, and general
+	composure suggest an alignment with African American identity, leans out
 	of the window of a walk-up, saxophone in hand, and asks Ma if his cello
 	can ``play anything a little more---upbeat?'' Ma rises to the challenge,
 	replying to Hoots that his ``cello can do anything your saxophone can 
@@ -2034,9 +2166,8 @@
 	\end{quote}
 
 	While Ma is now known for genera-crossing performances, when the first
-	of his \textit{Sesame Street} appearances aired in April \DIFdelbegin \DIFdel{, 
-	}\DIFdelend \DIFaddbegin \DIFadd{of
-	}\DIFaddend 1986\autocite{2210} Ma was just beginning to play outside of the 
+	of his \textit{Sesame Street} appearances aired in April of
+	1986\autocite{2210} Ma was just beginning to play outside of the 
 	classical cannon, releasing his first cross-over albums, 
 	\textit{Bolling – Suite for Cello and Jazz Piano Trio} and 
 	\textit{Japanese Melodies}, both in 1984.\autocite{MaSite} We can read 
@@ -2044,7 +2175,7 @@
 	of his now-famed versatility. The cross-culturalism for which Ma is 
 	known is not just about the aesthetic appreciation of diverse music, but
 	is part of a cultural-political project of seeking trans-national 
-	empathy and alliance building. This is sought both through the supposed 
+	empathy and \DIFdelbegin \DIFdel{alliance building}\DIFdelend \DIFaddbegin \DIFadd{fellowship}\DIFaddend . This is sought both through the supposed 
 	universality of classical music, as seen in Ma's globe-trotting 
 	``Bach Project''\autocite{BachProject} and through celebrations of the 
 	diversity yet compatibility of the world's musical cultures as seen in 
@@ -2052,13 +2183,12 @@
 	in the trailer for \textit{The Music of Strangers}, a 2016 documentary 
 	about the Silk Road Project, when he says ``We don't speak perfect 
 	English or perfect Chinese or perfect Persian, but we speak perfect 
-	music language.''\autocite{Strangers} \DIFaddbegin \DIFadd{Ma's collaborator treads the
+	music language.''\autocite{Strangers} Ma's collaborator treads the
 	well-worn fantasy of music as a universal language, but here framed as
-	the tongue of international alliance building and educational
+	the tongue of international \DIFdelbegin \DIFdel{alliance building }\DIFdelend \DIFaddbegin \DIFadd{fellowship }\DIFaddend and educational
 	partnerships.
-}\DIFaddend 
 
-	On \textit{Sesame Street}\DIFaddbegin \DIFadd{, }\DIFaddend early intimations of this project of 
+	On \textit{Sesame Street}, early intimations of this project of 
 	universality are apparent in Ma's performance with Hoots. Ma's ability 
 	to crossover and play jazz and blues showcases a world where folks of 
 	all kinds can play together. In this skit, Ma demonstrates a technical 
@@ -2068,20 +2198,19 @@
 	but though the vessel of cultural omnivory. His virtuosity is 
 	established not just as a classical soloist, as the opening of the skit
 	suggests, but as someone who can play anything, and everything equally 
-	masterfully. \DIFaddbegin \DIFadd{Not to mention gamely. Ma eagerly crosses imagined musical
+	masterfully. Not to mention gamely. Ma eagerly crosses imagined musical
 	and cultural divides, smiling all the while. He models a willingness to
 	make friends with just about anyone through the power of listening and 
 	play.
-}\DIFaddend 
 
-	But moreover than omnivorous playing, what \DIFdelbegin \DIFdel{you see }\DIFdelend \DIFaddbegin \DIFadd{is showcased }\DIFaddend here is an 
+	But moreover than omnivorous playing, what is showcased here is an 
 	intense
 	act of listening---virtuosicly so. Ma's presentation of omnivory is 
-	\DIFaddbegin \DIFadd{slightly, yet importantly, }\DIFaddend different on \ses than it is in \DIFdelbegin \DIFdel{the outside world}\DIFdelend \DIFaddbegin \DIFadd{his general
-	public persona}\DIFaddend . Rather than focusing
+	slightly, yet importantly, different on \ses than it is in his general
+	public persona. Rather than focusing
 	on genera fusion or on the universality of certain canons, here, Ma 
 	demonstrates virtuosic and universal listening by playing 
-	along \DIFaddbegin \DIFadd{extemporaneously }\DIFaddend with music that is outside of his traditional 
+	along extemporaneously with music that is outside of his traditional 
 	purview as a 
 	cellist. Hoots displays listening through his responses, verbal and 
 	musical. This is listening across boundaries. Ma is Asian and a human 
@@ -2091,25 +2220,21 @@
 	who come from different worlds. They are able to listen to each other, 
 	challenge each other, play together, and find commonality, while 
 	maintaining what makes them unique and highlighting their differences. 
-	\DIFdelbegin %DIFDELCMD < 
-
-%DIFDELCMD < 	%%%
-\DIFdelend Through this exercise in musical play and co-mututal listening, the two
+	Through this exercise in musical play and co-mututal listening, the two
 	musicians go from standing apart, as they play in different generas, 
 	reflecting different class and social worlds, to standing together: to 
 	\textit{understanding}.
 
-	This is \DIFdelbegin \DIFdel{virtuosity as }\textit{\DIFdel{listening with}} %DIFAUXCMD
-\DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{not just Ma's performance here as a cross-cultural collaborator,
+	This is not just Ma's performance here as a cross-cultural collaborator,
 	but a enduring aspect of his public persona. In his public appearances,
 	Ma almost always presents a kind and affable personality. His virtuosity
 	is framed though an interpersonal and cultural kindness and curiosity. 
-	He is presenting }\textit{\DIFadd{virtuosity as listening with}}\DIFadd{, expressed
-	through }\DIFaddend the
-	cultivation of co-mutual listening\DIFaddbegin \DIFadd{.
-	}\DIFaddend Visual artist David Hockney\DIFaddbegin \DIFadd{, known for his paintings and his 
-	multi-valent photo collages }\DIFaddend said, comparing \DIFaddbegin \DIFadd{his painting 
-	}\DIFaddend \textit{Yorkshire 
+	He is presenting \textit{virtuosity as listening with}, expressed
+	through the
+	cultivation of co-mutual listening.
+	Visual artist David Hockney, known for his paintings and his 
+	multi-valent photo collages said, comparing his painting 
+	\textit{Yorkshire 
 	Landscapes} to television that ``if you show the world better, it's more
 	beautiful, a lot more beautiful. The process of looking is the 
 	beauty.''\autocite[100]{Odell} Likewise, here, the \textit{listening} is
@@ -2120,43 +2245,33 @@
 
 	From his vocabulary, vocal delivery, and occupation as a jazz 
 	saxophonist, it is clear Hoots the owl is Black. Hoots is voiced by 
-	African American puppeteer Kevin Clash, \DIFdelbegin \DIFdel{who is also the voice of }\DIFdelend \DIFaddbegin \DIFadd{the first black puppeteer on the
-	program, who also gave voice to }\DIFaddend Elmo. 
+	African American puppeteer Kevin Clash, the first black puppeteer on the
+	program, who also gave voice to Elmo. 
 	Clash designed Hoots's gravely voice after that of Louis 
 	Armstrong.\autocites()(Also see the biographical documentary of the same
 	name.)[41]{Clash} The question of what is going on in this skit racially
-	is complex\DIFdelbegin \DIFdel{. Ute Kraidy has written about race and multiculturalism on }\textit{\DIFdel{Sesame Street}} %DIFAUXCMD
-\DIFdel{in the article ``Sunny Days on 
-	}\textit{\DIFdel{Sesame Street}}%DIFAUXCMD
-\DIFdel{? Multiculturalism and Resistance Postmodernism. ''
-	In this paper }\DIFdelend \DIFaddbegin \DIFadd{, as it is on the program in general. The diverse cast of 
+	is complex, as it is on the program in general. The diverse cast of 
 	monster and humanoid Muppets as well as humans of all races and 
 	abilities models the diversity of an American city. \ses scholar Ute 
-	}\DIFaddend Kraidy argues that in \DIFaddbegin \DIFadd{the way, in }\DIFaddend addition to teaching skills related
+	Kraidy argues that in the way, in addition to teaching skills related
 	to basic literacy and counting, \textit{Sesame Street} provides children
-	with \DIFdelbegin \DIFdel{cultural context}\DIFdelend \DIFaddbegin \DIFadd{the cultural context to navigate the world as informed citizens}\DIFaddend .
-	\autocite[13]{Kraidy} \DIFdelbegin \DIFdel{It does this though a
-	highly
-	diverse cast of humans and monsters and by addressing their differences
-	while highlighting their likeness}%DIFDELCMD < \autocite[18]{Kraidy}%%%
-\DIFdel{.  
-}\DIFdelend \DIFaddbegin \DIFadd{On the program, difference is addressed while
-	likeness is highlighted}\autocite[18]{Kraidy}\DIFadd{. }\DIFaddend \footnote{In 
+	with the cultural context to navigate the world as informed citizens.
+	\autocite[13]{Kraidy} On the program, difference is addressed while
+	likeness is highlighted\autocite[18]{Kraidy}. \footnote{In 
 	1992, \textit{The Economist} criticised this aspect of the program, 
 	calling it ``hyper-tolerance'' which leads to ``an intolerance of those
-	who do not practice this hyper-tolerance.'' See Kraidy, 14.} \DIFaddbegin \DIFadd{In a
+	who do not practice this hyper-tolerance.'' See Kraidy, 14.} In a
 	touching performance by Elmo and Whoopi Goldberg, they
 	compare their skin, hair, and fur. As Elmo learns the differences 
 	between their bodies, Whoopi points out that her brown skin and his 
 	red fur may be different, but are both beautiful and worth being proud 
-	of.}\autocite{2746} \DIFadd{This is both a message of Black is Beautiful, as
+	of.\autocite{2746} This is both a message of Black is Beautiful, as
 	the program draws attention to and celebrates Black hair and skin, and 
 	a more universal message of body positivity. Difference on \ses models
 	the diverse environment of American cities, teaches body positivity, 
 	and exposes children to other cultural ways of living and being.
-	}\DIFaddend 
 
-	\DIFdelbegin \DIFdel{This }\DIFdelend \DIFaddbegin \DIFadd{The ethos behind the idea that exposing children to a diverse spread 
+	The ethos behind the idea that exposing children to a diverse spread 
 	of adult would lead to children from different backgrounds growing up
 	to have ``one more thing in common,'' as expressed by Joe Rapso, is not
 	limited to the program's musical education. When the producers of 
@@ -2165,39 +2280,34 @@
 	educational 
 	model that she suggested that she instead assist in developing a 
 	curriculum on modern-day Native Amerian culture, which she did from 
-	1975 to 1981.}\autocite[235]{Davis} \DIFadd{In her appearances, she teaches 
+	1975 to 1981.\autocite[235]{Davis} In her appearances, she teaches 
 	about native American music and ways of life. She breastfed her 
 	child Cody on the program in what was the first ever broadcast of 
-	breastfeeding on American television. }\textit{\DIFadd{Sesame Street}}\DIFadd{'s 
+	breastfeeding on American television. \textit{Sesame Street}'s 
 	educational goals are as rooted in giving children a place to learn
 	about the diversity of the world as they are in basic literacy
 	and numeracy. The cultural curriculum tends to look more like exposure
 	through candid conversations between characters than formal
 	lessons.  
-}
 
-	\DIFadd{The }\DIFaddend highlighting of similarity through \DIFdelbegin \DIFdel{difference }\DIFdelend \DIFaddbegin \DIFadd{acknowledgement of difference 
-	via conversation }\DIFaddend is apparent in Ma's 
-	performance with Hoots. In \DIFaddbegin \DIFadd{this skit we see an Asian Ma play music with 
+	The highlighting of similarity through acknowledgement of difference 
+	via conversation is apparent in Ma's 
+	performance with Hoots. In this skit we see an Asian Ma play music with 
 	an aurally 
-	African American owl. In }\DIFaddend popular American culture, ``soul,'' 
+	African American owl. In popular American culture, ``soul,'' 
 	``swing,'' and ``groove'' are somatic experiences and expressions of 
 	phrasing and micro-timing which are especially present in African 
 	American musical styles. Because of their identification with the music
 	of Black America---and likely due to a cultural disrespect for Black 
 	musical labor---the ability to play with these categories of expression
 	is often attributed to racial makeup. Obviously, however, these are 
-	performance practices which are and can be learned. \DIFdelbegin %DIFDELCMD < 
-
-%DIFDELCMD < 	%%%
-\DIFdel{In this skit we see a visually Asian Ma play music with an aurally 
-	African American owl. }\DIFdelend On the other side 
+	performance practices which are and can be learned. On the other side 
 	of the spectrum from the 
 	cultural myth that Black Americans play music naturally with feeling is
 	the idea that Asians and Asian Americans are dedicated practicers who 
 	play with great technical skill but little feeling or emotion. Mina Yang
 	addresses this cultural phenomenon in her book \textit{Planet Beethoven}
-	where she \DIFdelbegin \DIFdel{write }\DIFdelend \DIFaddbegin \DIFadd{writes }\DIFaddend that ``This critical trope casts Asians in a binary 
+	where she writes that ``This critical trope casts Asians in a binary 
 	opposition vis-à-vis Westerners: Asians have the technique, Westerners 
 	have the heart, the soul. The image of Asians as automatons, robots 
 	without souls, appears frequently in the Western imagination, standing 
@@ -2215,9 +2325,8 @@
 	skit might also be read as an elevation of jazz and blues as art forms 
 	on par with classical music. In this regard, it seems to be speaking 
 	directly to the divide between Grosse Pointe and 148th street which 
-	Rapso described. Difference, \DIFdelbegin \DIFdel{in part }\DIFdelend with the help of \DIFdelbegin \DIFdel{multifaceted 
-	}\DIFdelend \DIFaddbegin \DIFadd{virtuosic listening and 
-	}\DIFaddend musical performance, can blossom into mutual understanding.
+	Rapso described. Difference, with the help of virtuosic listening and 
+	musical performance, can blossom into mutual understanding.
 
 
 	\subsection*{Interiority and the limits of understanding}
@@ -2230,11 +2339,11 @@
 	impressed that she played from memory,\autocite{Goddard} or the more 
 	contemporary film promo of ``the last romantic'' Vladimir Horowitz, in 
 	which he records canonic works almost entirely without consulting the 
-	scores. Playing without \DIFaddbegin \DIFadd{written }\DIFaddend music has long been considered an act of
-	virtuosity in the classical \DIFdelbegin \DIFdel{music }\DIFdelend performance canon. It is an outward 
+	scores. Playing without written music has long been considered an act of
+	virtuosity in the classical performance canon. It is an outward 
 	expression of interiority, both in the idea that the music is now 
 	completely contained within the performer, and that their practicing and
-	performing are \DIFdelbegin \DIFdel{necessarily }\DIFdelend concerned not with \DIFaddbegin \DIFadd{just }\DIFaddend playing the notes, but 
+	performing are concerned not with just playing the notes, but 
 	with capturing the emotional and spiritual aspects of the piece which 
 	are not contained in the printed music. 
 
@@ -2243,15 +2352,15 @@
 	established both in the classical sense and in terms of the ``feel'' and
 	``soul'' celebrated in jazz, blues, and related art forms which make 
 	significant use of extemporaneous performance. This multi-cultural 
-	interiority, the ability for the \DIFaddbegin \DIFadd{supposed }\DIFaddend universality of music to 
+	interiority, the ability for the supposed universality of music to 
 	transcend 
-	\DIFaddbegin \DIFadd{genera and culture establishes virtuosity as }\textit{\DIFadd{virtuous}}\DIFadd{.
-	}\DIFaddend The logic goes that if virtuosity means universality and universality is
+	genera and culture establishes virtuosity as \textit{virtuous}.
+	The logic goes that if virtuosity means universality and universality is
 	morally good, then so is virtuosity. This takes Joe Rapso's hope that 
 	the music on \textit{Sesame Street} would have a socially cohesive 
 	function even farther. By not only knowing diverse music, but taking 
 	part in it, one becomes an ideal global citizen who speaks not in broken
-	English, Chinese, and Persian, but in that fabled lingua franca, Music.   
+	English, \DIFdelbegin \DIFdel{Chinese, and Persian}\DIFdelend \DIFaddbegin \DIFadd{Mandarin, and Farsi}\DIFaddend , but in that fabled lingua franca, Music.   
 	This raises the question of what is actually accomplished by the ethos
 	of understanding seen on \ses and other public media, and what is
 	essentially virtue signaling. Ma expresses his virtuous virtuosity and 
@@ -2272,11 +2381,10 @@
 
 	These are the limits of understanding. Understanding is itself 
 	insufficient for the utopia that \ses presents if it leads no further 
-	than understanding \DIFaddbegin \DIFadd{alone}\DIFaddend . Understanding must come from a place which 
+	than understanding alone. Understanding must come from a place which 
 	leads to
 	 action, lest understanding simply lead to more understanding. 
-	\DIFdelbegin \DIFdel{That is 
-	the limitation of liberal understanding. }\DIFdelend Empathy can be offered in a 
+	Empathy can be offered in a 
 	broadcast, but if this empathy is used only to establish one's status 
 	as a virtuous, educated, middle-class subject, then it only exists to 
 	re-establish class boundaries: middle class people who understand 
@@ -2287,34 +2395,625 @@
 	\textit{with}, rather than simply listening. The Ma and Hoots skit 
 	displays something somewhere in between, as Ma listens, and listens to 
 	himself being listened to by Hoots. However, the relationship is 
-	asymmetrical. Other skits on the program, such as \DIFdelbegin \DIFdel{the Issac Perlman}\DIFdelend \DIFaddbegin \DIFadd{Issac Perlman's 
-	}\DIFaddend ``what's hard for you'' appearance present a more symmetrically mutual 
+	asymmetrical. Other skits on the program, such as Issac Perlman's 
+	``what's hard for you'' appearance present a more symmetrically mutual 
 	listening. And this is where understanding on \ses differs from 
 	understanding on NPR and \textit{All Things Considered}. On NPR, in the
 	world of the public radio sound, one can only listen as common folk 
 	speak into the microphone of the unacknowledged reporter. On 
-	\DIFdelbegin \DIFdel{\ses}\DIFdelend \DIFaddbegin \textit{\DIFadd{Sesame Street}}\DIFaddend , 
+	\textit{Sesame Street}, 
 	however, the child viewer is given numerous models of fair and radical 
-	co-mutual listening. While the Ma example falls short \DIFaddbegin \DIFadd{of the program's 
-	other more symmetrical and effective examples of listening}\DIFaddend , the basic 
+	co-mutual listening. While the Ma example falls short of the program's 
+	other more symmetrical and effective examples of listening, the basic 
 	premise
 	of the idea is there: careful \textit{listening with} is an active
 	decision which can lead to the healing of deep historical wounds, 
 	divides, and misunderstandings.
 
-	\subsection*{Character Study 2: Evelyn Glennie: ``I listen with my feet''} 
+	\subsection*{Character Study 2: Evelyn Glennie: Teaching the world to
+	 listen} 
+
+	Evelyn Glennie is a Scottish percussionist born in 
+	1965.\autocite[6]{Glennie} She is one of the first and only \DIFaddbegin \DIFadd{western 
+	}\DIFaddend musicians to make a career as a solo percussionist. From 
+	around the age of eight, Glennie began to lose her 
+	hearing.\autocite[40]{Glennie} \DIFdelbegin \DIFdel{Around }\DIFdelend \DIFaddbegin \DIFadd{In response to }\DIFaddend these changes, she 
+	developed an 
+	entirely new way of listening and engaging with sound which is not based
+	in the ears. In her documentary and performance film \textit{Touch The 
+	Sound} Glennie presents the idea that listening is simply a specialized
+	form of touch. While for many people listening happens primarily in the
+	ears we all listen with other parts of our body\DIFdelbegin \DIFdel{, and }\DIFdelend \DIFaddbegin \DIFadd{. }\DIFaddend Glennie is known
+	to play without shoes on so that she can better feel \DIFdelbegin \DIFdel{both }\DIFdelend \DIFaddbegin \DIFadd{the sounds of }\DIFaddend her 
+	own and other musician's instruments. Glennie sometimes takes 
+	advantage of the
+	multisensory nature of listening and, in order to convey that she is 
+	playing something very quietly, \DIFdelbegin \DIFdel{she will sometimes during concerts }\DIFdelend \DIFaddbegin \DIFadd{during concerts will }\DIFaddend move
+	her mallets without actually striking the notes. She says that ``\DIFdelbegin \DIFdel{If }\DIFdelend \DIFaddbegin \DIFadd{if }\DIFaddend I 
+	want to play something quietly, sometimes I move my mallets but I'm not
+	actually touching the instrument. So, the audience feels I'm playing 
+	extremely quietly, and they really do believe they're hearing something
+	 even though nothing is coming out. It's because they're seeing the 
+	movement [...] that automatically gives them the feeling that sound is 
+	there." This highlights the strong visual component of sonic perception
+	that most people \DIFdelbegin \DIFdel{unconsciously make use of}\DIFdelend \DIFaddbegin \DIFadd{are unconsciously taking part in}\DIFaddend , and gives a glimpse 
+	into the
+	listening practices that Glennie herself uses.\autocite[109]{Ceraso}  
+	This reminds us that listening is fundamentally a multisensory practice
+	and that \textit{\DIFdelbegin \DIFdel{Earing,}\DIFdelend \DIFaddbegin \DIFadd{earing}\DIFaddend }---perceiving through the \DIFdelbegin \DIFdel{ears--is }\DIFdelend \DIFaddbegin \DIFadd{ears---is }\DIFaddend not the 
+	same as listening\autocite[105]{Ceraso} and that the senses are 
+	contextually interdependent: Vision, hearing, touch, taste, and smell 
+	are idealized types that do not exist in 
+	isolation.\autocite[212]{Holmes}
+
+	Glennie said in an interview that her ``aim, really, is to teach the 
+	world to listen. That's my only real aim in 
+	life.''\autocite[172]{Holmes} Her emphasis on listening is highly 
+	\DIFdelbegin \DIFdel{intersectional }\DIFdelend \DIFaddbegin \DIFadd{resonant }\DIFaddend with the kind of listening taught on
+	\ses so much so that she is far from the only musician who \DIFdelbegin \DIFdel{demonstrates
+	}\DIFdelend \DIFaddbegin \DIFadd{engages in
+	}\DIFaddend mulitmodal listening. In the Ma and Honkers skit, Yo-Ya Ma demonstrates
+	his virtuosic listening by privileging his sight-line to the honkers 
+	over looking at his music. Here, he clearly demonstrates a listening 
+	with the eyes, where the tempo and the interaction of the parts---all
+	sonic information---are communicated visually as much as they are 
+	aurally. \DIFaddbegin \DIFadd{In one of Glennie's appearances on the program, her virutosity
+	and ways of listening are highlighted.   
+}\DIFaddend 
+
+	\begin{quote}
+\DIFaddbegin 
+
+	\ttfamily
+
+	\DIFaddend The scene opens with Oscar and Telly peeking over Oscar's trash cans. 
+	Three children stand beneath them in green t-shirts with trash can lids
+	on their heads and dirt rubbed on their faces.
+
+	``Okay Telly, now it's time for band practice.''
+
+	``Okay.''
+
+	``Let's see were gonna have uh Briana and Skylar are going to bang on 
+	the uh, old tin cans. We've got Raphael on the torn boots. Heh heh. 
+	Telly,you're going to be playing the dented horn.''
+
+	``Yeah.'' Telly's eyes open wide as he gives the instrument a blow, and 
+	a dull series of notes, all smeared together, comes out. 
+
+	``Ahh, beautiful.'' 
+
+	Telly grunts and gives the instrument a frustrated slap, as if to 
+	dislodge something stuck inside of it.
+
+	Oscar looks off camera to stage left and the camera pans to follow. 
+
+	``Hey, who are you?''
+
+	``Oh, uh, this is my friend, Evelyn Glennie!'' Telly offers.
+
+	``Pleased to meet you, Oscar.''  
+
+	``Yeah, well, I'm a grouch. I'm not \DIFdelbegin \DIFdel{plead }\DIFdelend \DIFaddbegin \DIFadd{pleased }\DIFaddend to meet anybody. Now scram, 
+	will ya'?I've got a \DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band practice going on.''
+
+	``B-b-bu-but-but Oscar, Evelyn's always dreamed of playing in the 
+	\DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band.''
+
+	``Absolutely! And look at the wonderful instruments that you have." 
+	Glennie motions to the pile of garbage.  
+
+	``Well, you can't play in the \DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band, 'cause you're not a 
+	\DIFdelbegin \DIFdel{Grouchcateer}\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer}\DIFaddend .''
+
+	``Uh, b-bu-but Oscar, she's a great musician. Uh, you should hear he 
+	play, really.''
+
+	``Do I have too?'' Oscar groans.
+
+	``Go on Evelyn, play something for Oscar.''
+
+	``Okay, okay, let me take my shoes off.''
+
+	``You're going to play with your feet?'' Oscar interjects. ``Hey, this 
+	could be grouchier than I thought.''
+
+	Evelyn laughs. ``Well, it's just that it helps me hear the music.''
+
+	``Evelyn's deaf Oscar. She can't hear.''
+
+	``Yeah, than how can she hear what we're saying?''
+
+	``I'm reading your lips, Oscar.''
+
+	``Oh, well, quit reading and start playing! I haven't got all day.''
+
+	``Okey-doke.''
+
+	Turning to her snare drum, Glennie plays an \DIFdelbegin \DIFdel{impressive fill composed of
+	 a long rollwith a syncopated rhythm marked out }\DIFdelend \DIFaddbegin \DIFadd{impressively smooth buzz 
+	roll. She taps out syncopated rhythm }\DIFaddend on top of it with accented \DIFdelbegin \DIFdel{strokes}\DIFdelend \DIFaddbegin \DIFadd{strikes
+	to the drum head}\DIFaddend .
+
+	``Woah.''
+
+	``Hahaha! I told you she was good!''
+
+	``Yeah, I'll say.''
+
+	``So, can she play in the \DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band?''
+
+	``Nah.''
+
+	``But Oscar, you said she was good!''
+
+	``Well I don't need good, I need \textit{grouchy}.''
+
+	``Ohhh, wait wait wait'' Glennie interjects. She pulls out two Tubz, a 
+	kind of stiff hollow plastic tube that creates a resonant pop when 
+	played on any hard surface. She uses them to play an impressive flurry
+	of notes on a pair of bongos.  
+
+	``Hmm. Well, not grouchy enough.''
+
+	Glennie returns to her snare drum, where she plays another impressive 
+	short solo.  
+
+	``Sorry. Audition is over.''
+
+	``But Oscar, you gotta let her play. She came all the way from Scotland
+	just to play in the \DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band, and Evelyn can play just about 
+	anything.''
+
+	``\textit{Anything}?'' Oscar raises his hand to his face and looks down,
+	 scheming. "How about my \textit{trashcan}?'' he asks with mischief in 
+	his voice.
+
+	``Your trashcan!'' Telly replies, offended. ``You want a great musician
+	like Evelyn Glennie to play your \textit{trashcan}!?''
+
+	``Stand back, please.'' Evelyn replies, and she plays a fourth solo, 
+	drumming on the outcropping of junk and trashcans that Oscar the grouch
+	calls home, moving all over and creating different tones from the 
+	various materials. 
+
+	``Wooaahh. Wow! What a sound!'' Oscar responds. ``That was the 
+	grouchiest music I've ever heard!''
+
+	``S- so- so can she play in the \DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band?''
+
+	``Play in it? I hope she never stops!''
+
+	``Oh Oscar, thank you.''
+
+	``And now, the \DIFdelbegin \DIFdel{Grouchcateer }\DIFdelend \DIFaddbegin \DIFadd{Grouchketeer }\DIFaddend band will play, \textit{Sonata for crushed 
+	cans, torn boots, dented horn, and trashcan} by Ludwig von 
+	Blech-toven.''
+
+	``Oh, great!'' Glennie raises her sticks in appreciation.  
+
+	``Yeah, heh heh. Okay \DIFdelbegin \DIFdel{Grouchcateers}\DIFdelend \DIFaddbegin \DIFadd{Grouchketeers}\DIFaddend , a one and a two and---''
+
+	The players break out into \DIFdelbegin \DIFdel{Cacophony}\DIFdelend \DIFaddbegin \DIFadd{cacophony}\DIFaddend . 
+
+	``Ahhh... Talk about easy listening!'' Oscar \DIFdelbegin \DIFdel{inserts }\DIFdelend \DIFaddbegin \DIFadd{muses }\DIFaddend as he conducts. 
+
+	\end{quote}
+
+	In this skit, Glennie's virtuosity is reinscribed through the challenges
+	lobbed at her. 
+	While Telly baulks at Oscar's request that she play his trashcan,
+	Glennie rises to 
+	the challenge with full confidence. For her, the step from instrument to
+	non-instrument is not a step down in organological quality, but instead
+	a step up in capacity for virtuosic display \DIFaddbegin \DIFadd{where she showcases and
+	embodies a sense of boundary-less child-like play and ``gameness'' to 
+	approach a challenge}\DIFaddend . This is another example of
+	the ways that the status of the classical music establishment is 
+	challenged by format comedy, pastiche, and general silliness\DIFdelbegin \DIFdel{yet
+	}\DIFdelend \DIFaddbegin \DIFadd{, yet is
+	}\DIFaddend simultaneously reinforced. Glennie's virtuosity, perhaps because of the
+	way that it has been removed from its institutional context, is  
+	\DIFdelbegin \DIFdel{an 
+	}\DIFdelend approachable, classless, \DIFdelbegin \DIFdel{and middlebrow virtuosity with }\DIFdelend \DIFaddbegin \DIFadd{omnivorous, and has }\DIFaddend an aesthetic 
+	taste which is wider than what is normally performed in classical
+	music halls. \DIFaddbegin \DIFadd{This is a common role that Oscar and other Grouches play
+	on \ses, where they represent something like an ultimate cultural other.
+	They are a culture with exactly opposite customs and tastes as the human
+	world. They go to the ``Break-it Shop'' to get new toasters dented, 
+	they hoard rather than throw out garbage, and they play cacophonous 
+	music. On one level, they represent the extreme diversity of the urban 
+	environment, and interactions with them are opportunities for expansion 
+	and cross-cultural compassion. If we take Gouches as the ultimate 
+	others, whose ideas of beauty are expressly opposite those of the 
+	classical canon---which sets up classical music as the most structured
+	 of musical forms---then the desire that the guests have to play with 
+	them serves to demonstrate the omnivorous virtue of these performers,
+	and also dissolves their image as stodgy custodians of a dusty old style.   
+}
+
+	\DIFadd{Grouches also seems to represent the icky childhood spirit that takes
+	delight in, or has yet to be inculturated into a fear of, gross and
+	icky things, loud noises, and the thrill of chaos. The Grouchketeers 
+	give space for Gelnnie to perform childhood and the beginners eyes that
+	come along with it. This demonstrates a stark contrast between her 
+	persona and playing style, and those of the mainstream classical world.
+	and the tradition, stodginess, and class boundaries which are associated
+	with it.
+}\DIFaddend 
+
+	This tracks with Glennies general public persona. In performances, she 
+	likes to announce the program herself, something which is almost
+	completely unheard of in classical music. She does, this, she says, so 
+	that ``the audience have an immediate sense of who I 
+	am.''\autocite[3]{Glennie} She takes a similar attitude to her wardrobe:
+	\DIFaddbegin \DIFadd{When she played at the BBC's Proms in 1989, she very intentionally chose
+	a more casual outfit which included pants rather than a dress, in order
+	to seem more approachable.  
+}
+
+	\subsection*{\DIFadd{Disability and the politics and poetics of listening}}	
+\DIFaddend 
 
 
+	Glennie \DIFdelbegin \DIFdel{is something of a controversial figure among the Deaf community}\DIFdelend \DIFaddbegin \DIFadd{does not like to have her deafness highlighted in her 
+	concert reviews or news coverage, but says that she prefers to have her 
+	music judged with no mention of her disability. She hedges that ``The 
+	only good thing about it, I sometimes think rather despondently, was 
+	that the news of my success might have encouraged other deaf and 
+	handicapped people.''}\autocite[59]{Glennie}
+
+	\DIFadd{While the view of hearing loss that Glennie's persona presents is 
+	does not pathologize hearing loss, she does not identify as ``deaf.'' 
+	Her official bio
+	on her website does not use the word deaf, but says instead that her 
+	``hearing declined from the age of 8.'' In the past she has described 
+	herself as ``deafened,'' and has maintained a distance from Deaf 
+	culture. In 1994, two years before her appearance on 
+	}\textit{\DIFadd{Sesame Street}}\DIFadd{, she told the magazine }\textit{\DIFadd{Parade}} \DIFadd{that 
+	``I don't see
+	myself as a deaf person... Rather, I'm a hearing person who happened to
+	lose hear hearing. It occurred gradually, so I was able to adjust to 
+	each level. I couldn't make myself into a deaf person and say, `Oh, I 
+	can't do this' and `I can't do that.'\,'' Her personal narrative has 
+	been one adaptation and resilience in order to remain in hearing 
+	society, though her last sentence suggests that in the '90s she had a 
+	defeatist conception of what it meant to be Deaf with a capital D, 
+	that is, a member of Deaf culture. With time, her
+	attitudes seem to be changing, and she began to learn sign language in 
+	2008.}\autocite[186]{Holmes} \DIFadd{Her defeatist conceptions of what it means 
+	to be Deaf,  
+	however, most certainly come from a lifetime of being told at nearly 
+	every development in her career as a musician that it would be 
+	impossible for her to become a professional given her disability, and
+	a limelight which has the tendency to highlight her disability rather 
+	than her playing. Despite 
+	Glennie's nuanced relationship with disability, and her distaste for 
+	media coverage which highlights her deafness, she is perfect fodder for 
+	the projection of ``supercrip'' fantasies. This is the idea that deaf 	
+	or otherwise disabled people compensate for their disability through the
+	acquisition of sensory ``super powers'' like hearing entirely through 
+	touch, something technically known as ``cross-modal plasticity,'' which 
+	despite media portrayal, is only known of in cases of deafness was 
+	acquired before spoken language was learned by a child. Supercrip 
+	tropes epitomize the narrative of overcoming 
+	disability and shift the burden of stigma from the society which has 
+	created a world designed without accomodations for the disabled to the 
+	individual
+	who }\textit{\DIFadd{should}} \DIFadd{be able to overcome their disability. These tropes 
+	are distinct from the visual and tactile acuities associated with 
+	hearing loss---or as some prefer, Deaf 
+	Gain}\autocite[174]{Holmes}\DIFadd{---which are better understood as cultural 
+	practices that exist within the Deaf community.}\autocite[181]{Holmes}
+
+	\DIFadd{Gelnnie encapsulates everything which is messy about listening. Though 
+	her mission is to teach the world to listen, her relationship with 
+	listening is itself complex, nuanced, and always in flux. The 
+	neoliberal utopianism of her goal, ``a society where communication and 
+	social cohesion are improved by the act of 
+	listening,''}\autocite{GlennieOnline} \DIFadd{takes listening
+	for granted as stable category of perception. Her own listening 
+	practices are complex, multimodal, and highly publicized, yet are 
+	misunderstood by the press which publicise them. Her listening practice
+	aims to bring the wold together, yet has alienated listeners with similar 
+	disabilities: One user on the online Deaf community Alldeaf wrote
+	regarding Glennie's forms of listening that ``Not every DEAF person can
+	 `feel' music like a select few eg Evelyn Glennie... I have tested the 
+	theory of being able to `feel music by putting my hand on a loud speaker
+	playing music'---vibrations only! I don’t identify }[\DIFadd{it}] \DIFadd{as
+	music.''}\autocite[184]{Holmes} \DIFadd{Furthermore, Glennie's forms of
+	multimodal listening, which involve 
+	perceiving sound with the eyes and feeling vibrations in the body are 
+	are a virutosic and rare skill upon which to base a musical career, yet
+	are the same mechanism that all listeners, hearing or 
+	non-hearing, use to perceive sound along with any level of aural 
+	hearing that they may have. And while her experience of listening is
+	fundamentally different that that of a hearing person, her 
+	presentations of listening largely pass for hearing and replicate the
+	patterns of ear-based listening. While this is not always the case it
+	is the most common presentation of her listening. There are several
+	moments in her film }\textit{\DIFadd{Touch the Sound}} \DIFadd{where the uniqueness of 
+	her hearing is highlighted, including one moment where, after striking
+	an enormous gong, she continues to stand near it, listening, long after
+	the sound that the hearing audience of the film can perceive has ended,
+	implying that she can still see or feel the vibrations that are too 
+	subtle for the hearing viewers. However, this is more the exception
+	than the rule, and her hearing for the majority of the film is more or
+	less the same as that of the other musicians she plays with}\DIFaddend .  
+
+	\DIFaddbegin \DIFadd{Glennie brings her multimodal listening practices to the musical 
+	educational project of }\textit{\DIFadd{Sesame Street}} \DIFadd{and the forms of
+	listening that it encourages. Here, the traditional forms of classical
+	music consumption are eschewed in favor of more active and playful 
+	forms of engagement. Glennie, in conceiving of sound as a specialized 
+	form of touch, epitomizes multi-modal full bodied listening. In so doing
+	she radicalizes the very meaning of what it is to listen. She brings 
+	this deconstructed listening to }\textit{\DIFadd{Sesame Street}}\DIFadd{, where, 
+	ultimately, the kind of listening that is  
+	taught, both regarding and via the locus of classical music, is one 
+	of omnivory and of childlike delight in transgressing boundaries. Both 
+	Glennie and Ma listen with their eyes
+	as they practice unusual forms of engagement with classical music 
+	and strike new and complex positionalities to the classical 
+	establishment that they take part in. }\DIFaddend Through dress, public persona, and
+	omnivorous virtuosity, both Glennie
+	and Ma transcend \DIFaddbegin \DIFadd{the }\DIFaddend highbrow and arrive at the non-planer space of the 
+	middlebrow, which is somehow more musically virtuosic and socially 
+	virtuous. In both of these cases \DIFdelbegin \DIFdel{, }\DIFdelend it is done through \DIFdelbegin \DIFdel{a }\DIFdelend \DIFaddbegin \DIFadd{an apparently  
+	}\DIFaddend non-dualistic form of listening \DIFdelbegin \DIFdel{, }\DIFdelend which does not see lines of genera, 
+	seriousness, or \DIFdelbegin \DIFdel{brow. }%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{Educationally, this is the kind of musicianship that *Sesame Street* endorses. }\DIFdelend \DIFaddbegin \DIFadd{class. Historically, classical music has tended toward
+	highly prescriptive modes of listening, consumption, and production. 
+	}\textit{\DIFadd{Sesame Street}}\DIFadd{, in an effort toward class inclusion, intervenes
+	in these listening practices, and demonstrates a number of alternatives.
+	These alternatives do both the work of untangling music from the class
+	barriers which surround it, and the work of teaching these forms of
+	listening as social and cognitive skills. Multimodal listening tends 
+	toward a more 
+	ecological sense of the sound world, where sound is an event in which 
+	the listener is participating, is }\textit{\DIFadd{listening with}}\DIFadd{, rather than 
+	as an object to which they listen.}\autocite[109]{Ceraso}
+\DIFaddend 
+
+	Glennie \DIFdelbegin \DIFdel{epitomizes a kind of multi-modal full bodied listening . She 
+	conceives of sound as a specialized form of touch, and
+	so radicalizes 
+	the very meaning }\DIFdelend \DIFaddbegin \DIFadd{encapsulates the promise and shortcomings of listening on 
+	}\textit{\DIFadd{Sesame Street}}\DIFadd{: though it offers to heal wounds of class and 
+	race and improve communication, listening is such an unstable category 
+	that it can only be approached obliqely, as listening plain and simple,
+	frankly, does not exist. 
+	Listening is not a neutral act of opening your senses to information, 
+	but rather a cultivated practice of perception, a socio-cultural 
+	technology, always medaited and subject to control, and fraught with all
+ 	the baggage of the culture that the listening stems from. 
+}
+
+	\DIFadd{Furthermore, in terms of ability and disability,
+	``normal'' able-bodied hearing is itself an unstable category as ears 
+	are exceptionally sensitive organs susceptible to damage from daily 
+	activities such as walking near traffic, seeing live music, or the 
+	conditions of the workplace.}\autocite[208]{Holmes} \DIFadd{Sound scholar 
+	Jonathan Sterne conceives of these forms of hearing loss as ``audile 
+	scarification''---changes to the body from sounds. He describes audile
+	scarification as ``the participation in the everyday urban life of 
+	advanced capitalism. }[\DIFadd{It}] \DIFadd{is both a form of inscription on the body, and
+	a mode of compliance. To participate in a loud music performance, to 
+	subject oneself to the roar of an airplane engine or bathroom air dryer,
+	to attend a sporting event. All of these practices ask something of 
+	their attendees’ bodies; they mark them. To submit oneself to an event 
+	like this is to consent to a certain potential for audile 
+	scarification.''}\autocite[204]{Holmes} \DIFadd{Hearing loss/Deaf gain is a 
+	basic element of modern life. Though we may conceive of an able-bodied
+	idealized listener who hears with their ears alone, this listener, or 
+	rather, this }\textit{\DIFadd{hearer}} \DIFadd{is a transitory and illusory character,
+	as, after all, we will all be disabled eventually if we live long 
+	enough.
+}
+
+	\DIFadd{I am not arguing that }\textit{\DIFadd{Sesame Street}} \DIFadd{or Evelyn Glennie are doing
+	something wich is naieve or misguided. Rather I think that they are both
+	doing the best that they can at a very difficult and complicated 
+	education and social mission. Fittingly, the way that they do it is 
+	always changing. I find that \ses 
+	succeeds in presenting multiple modes of listening with various levels 
+	of nuance, painting a broad and multi-valent picture }\DIFaddend of what it means 
+	to listen\DIFdelbegin \DIFdel{. She brings to \ses 
+	this deconstructed listening.  
+}\DIFdelend \DIFaddbegin \DIFadd{, from the shopkeeper listenining to Simon Soundman's 
+	phonographically accurate voice, Glennie ignoring her friend Linda, to
+	Oscar the Grouch's near exclusive taste for cacophony, \ses destabilizes 
+	and decenters mainstream listening practices and in its place offers,
+	despite its many shortcomings, an ecological framework for listening---
+	a framework for }\textit{\DIFadd{listening-}} \DIFadd{and }\textit{\DIFadd{playing with}}\DIFadd{. 
+}
+
+
+	\newpage
+	\section*{\DIFadd{Prologue to forever: Mushrooms, mycelia, the internet}}
+
+	\DIFadd{There is an image I have seen a few times surrounding discussions of 
+	mushrooms which places a mycelial network and a projection of the 
+	internet side-by-side
+	in comparison. The underground network of tissue that makes up the 
+	majority of the mass of the fungal organism bears a remarkable 
+	resemblance to the dense and heterogeneous mesh of digital 
+	infrastructure which transports so much of our information in modern 
+	life. For me, 
+	however, the connection between mushrooms and the internet has been far
+	more pragmatic. My love and appreciation for the World Wide Web 
+	blossomed alongside and because of a concurrent love for mushroom 
+	hunting. When I was about 9 years old  I started taking photos of 
+	mushrooms on my 
+	family's new digital camera and became interested in learning
+	more about them. I did my identifications at that time largely based on
+	online resources, such as Roger's Mushrooms and later Mushroom Observer.
+	The dichotomous keys used in species identification, where questions 
+	such as ``are the gills attached or detached?'' lend themselves well to
+	a hypertext medium, and the abundance of available photographs was a 
+	convenient aide to identification.
+}
+
+	\DIFadd{Befitting the similarities in structure between the internet and a 
+	fungal network, the movements and modes of thought that one uses in 
+	mushroom hunting are similar to those that one uses in browsing the web,
+	and I think this was particularly true in the days before targeted 
+	advertisements, cross-site tracking, and modern search engines. The way
+	that one wandered the links on a personal HTML page or a webring 
+	mirrored the bounce from one mushroom to the next, growing out along one
+	arm of the mycelial body. And then there's also knowing which ecological
+	zones lead to what kind of fungal fruits, knowing where to look for what
+	kind of webpage, adding the location of the mushrooms to your mental map
+	of the neighborhood, adding the webpage to your bookmarks. Later, 
+	checking these locations for new growths.  
+}
+
+	\DIFadd{But what even is this thing that we call the }\textit{\DIFadd{internet}}\DIFadd{? It is 
+	often depicted in corporate style art glyphs and advertisements for new
+	web services as a cloud, a globe covered in lines that look like the 
+	tails of comets, or a highway of wires between different devices and 
+	services. My favorite heuristic, however, is that the internet is simply
+	a single wire. When I enter www.google.com into my browser, I am sending
+	a request from my router to Google's router, which may be many states or
+	even countries over. Google receives the request and responds by sending
+	back the information that I asked form in the from of a webpage. This 
+	all takes place on a wire that connects my router to theirs, though, 
+	this wire is highly discontinuous, and the information bounces through 
+	several other routers on the way and through many different internet 
+	service providers. It is important to note that www.google.com is not 
+	the }\textit{\DIFadd{internet}} \DIFadd{but rather a }\textit{\DIFadd{web service.}} \DIFadd{The internet is
+	the wire, is the communications infrastructure that connects computers 
+	across the globe, while the web is the media ecosystem that lives on 
+	that wire.
+}
+
+	\DIFadd{This wire is now where \ses has taken up residence. 
+	While this paper has dealt exclusively with \ses within the context of 
+	its 
+	broadcast on public television, the primary broadcasting of the program
+	moved to HBO in 2015 and then to the streaming service HBO Max in 2020 
+	as changes in the DVD market meant 
+	less revenue for Sesame Workshop on public television, though episodes 
+	still air on PBS stations---for example, my local PBS station KETC in 
+	Saint
+	Louis broadcasts }\textit{\DIFadd{Sesame Street}} \DIFadd{twice a week---but episodes air
+	9-months after they appear on HBO.}\autocite{Koblin} \DIFadd{This 
+	might mean that something like this years juneteenth episode may never 
+	air on public television at all. 
+}
+
+	\DIFadd{There is also a collection of segments from the program at 
+	sesamestreet.org and eight full 
+	episodes at a time available at pbskids.org. It is possible that this is
+	where the majority of lower income children may be watching. This 
+	general shift from a broadcast to an internet streaming model must have
+	implications for how easily the program is accessed, which may 
+	ultimately effect the kinds of listening which the program encourages.
+	Their are three tiers of access: HBO streaming, which is, simply put,
+	a luxury 
+	product; pbs.org, for which one needs internet access and a device; and
+	the 9-month-delayed broadcast on PBS. In New York City, 29\% of 
+	households do not have home broadband and 18\% percent of residents 
+	have neither a home nor mobile broadband connection.}\autocite{CTNY} 
+	\DIFadd{The hard shift in
+	favor of internet streaming has huge implications for who can access 
+	the program and when. A report by the United States Census Bureau from
+	2018 found that only 85\% of American households had any kind of 
+	broadband subscription,}\autocite[2]{Martin} \DIFadd{whereas when \ses launched 
+	in 1969, 95\% of 
+	households had a television set.}\autocite[142]{Steinberg} \DIFadd{It is quite 
+	possible that \ses is less
+	accessible now than it has ever been, especially for disenfranchised
+	populations. 
+}
+
+	\DIFadd{It seems to me that the real Sesame playground, in the mushroom-hunting
+	sense, is not at 
+	sesamestreet.org or pbskids.org, but instead in the depths of bootleg 
+	YouTube uploads, archive.org, and the segments and skits that 
+	people all over the internet are discovering, uploading, and discussing 
+	on forums, blogs, and social media. These are primarily adults, 
+	engaging with \ses, a fixture of their own or their childrens'
+	childhood. These are the ``lost media'' 
+	enthusiasts who rediscovered an episode of \ses which only aired once, 
+	after numerous parents wrote in to complain that it was too 
+	scary.}\autocite{NBC} \DIFadd{These
+	are the twitter nostalgists who find their favorite songs from their own
+	\ses heyday. These are the memesters who find singular 
+	brilliance in episode 4077, where Elmo, letting out his chaotic side, 
+	``looses his sh}\*t \DIFadd{over a rock,'' as one bootleg YouTube upload of the 
+	segment put it. There is also ``Elmo rise'' or ``Hellmo,'' a crudely 
+	created image of Elmo rising out of flames of what is presumably Hell.
+}
+
+	\DIFadd{This is the mushroom-hunting spirit creating a collective conversation 
+	about }\textit{\DIFadd{Sesame Street}}\DIFadd{. Though it is sometimes crude, I 
+	wonder if this is the true listening playground of \ses going forward, 
+	where the characters no longer belong to Jim Henson, Sesame Workshop, or
+	Disney, but are cultural artifacts that enthusiastic individuals are 
+	able to reconstruct and recombine to make new meaning. Amatuer 
+	historians digging thorough digital and physical archives to find lost 
+	episodes, those rare mushrooms of delight, or simply to catalogue the 
+	show's long tenure---the collection and cataloging, the fungarium work 
+	that still to this day is essential to mycological research. My research
+	is indebted to the Muppets Fandom wiki, a project of volunteer 
+	enthusiasts and perhaps the most extensive and detailed ``finding aide''
+	to the \ses corups. 
+}
+
+	\DIFadd{I am tempted to frame this behaviour as a kind of ``post-listening.'' If
+	in bird watching---or ``bird listening'' as Jenny Odell would say---one
+	observes, identifies, and takes note, and in worm listening one sits 
+	still in contemplation of the sensorium of others, mushroom hunting 
+	combines these two framworks for listening, both observing the mushroom 
+	and seeking to understand the hidden depths of its mycelium, while at 
+	the same time delighting in the consumption of the fruits of the soil. 
+	Mushroom hunting hardly uses the ears, at least not alone, but relies on
+	both intuitive and experienced multi-sensory perception and 
+	understanding of the environment to position oneself in the ecological 
+	zones where mushrooms fruit. This post-listening is a multisensory 
+	activity which requires the intentionality and focus of deep listening, 
+	the ecological spirit of listening with, and uses the eyes, the 
+	skin, the nose, and the ears but does not priveldge sound nor ``earing''
+	as the primary substance nor sense by which listening is carried out. 
+	The tech-natives who are doing much of this research 
+	and discovery navigate the internet in a similar way, mixing careful 
+	attention with intuitive sense for what can be found where, based on a 
+	lifetime, even a short one, on the great big computer mycelium. And
+	importantly, it is all done not in search of world piece, nor 
+	mindfulness, but simply for individual and shared delight. This takes
+	shape as nostalgia, the collection and love of trica, and---as in the
+	case of Hellmo---sheer transgression.   
+}
+
+	\DIFadd{Mushrooms are also the delicious fruit of decay, apples growing out of 
+	rot. Similarly, the internet's fascination with \ses comes at 
+	the time of the decay of broadcast television. These are the 
+	fruits of decay, and so was }\textit{\DIFadd{Sesame Street,}} \DIFadd{coming out of a 
+	moment of divestment from American cities, but also the decay by fire, 
+	the intentional burning by dedicated individuals, of the structures of 
+	systematic racism that would have prevented a show with a mixed race 
+	cast from being produced, and would have disqualified this program from
+	airing, as for example it was during its first year in 
+	Mississippi.}\autocite[201]{Davis} 
+
+	\DIFadd{Given, on the other hand, how nasty the internet can be, I hope that 
+	post-listening is not to listening as post-truth is to truth. I hope
+	that
+	post-listening does not come to mean }\textit{\DIFadd{not-listening}}\DIFadd{, eschewing 
+	it	
+	altogether as a useful category on an internet and in a society where 
+	the monetization of attention and the rise of a far-right driven by 
+	hateful political aesthetics has put truth as we have come to know it 
+	into a moment of crisis. Instead, I hope that post-listening can mean 
+	that we listen our hardest in all the ways that we collectively know 
+	how, and, if you ask me, I'd say that's how we get to }\textit{\DIFadd{Sesame 
+	Street.}} 
+\DIFaddend 
 
 \newpage
 \singlespacing
 \printbibliography
 \end{document}
-
-
-%	While the program's most recognizable faces may be the members of its 
-%	puppet cast, who hail from Jim Henson's troupe *The Muppets*, music and
-%	musicians play an important role in the program's educational mission,
-%	as well as its multi-age appeal. 
-
-
