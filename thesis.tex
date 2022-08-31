@@ -1,4 +1,4 @@
-\documentclass[12pt,letterpaper]{article}
+\documentclass[12pt,letterpaper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
@@ -22,40 +22,108 @@
 	}
 
 \begin{document}
-	
-	\title{Playing \textit{with} the Music: Ecologies of Attention and 
-	Understanding in the Classical Music Education Project of 
-	\textit{Sesame Street}\\
-	\vspace*{12pt}
-	\large
-	\textit{or}\\
-	\vspace*{12pt}
-	\Large
-	The Bird, the Worm, and the Mushroom:\\ Three Stories of Listening}
-	\author{Eden Attar}
-	\maketitle
-	\doublespacing
+
 	\thispagestyle{empty}
+	\begin{center}
+        \small Washington University in St. Louis \\
+                   School of Arts \& Sciences \\
+                       Department of Music \\
+        \vspace*{1.25in}
+        \Large   Playing \textit{with} the Music: \\
+        \vspace{0.1cm}
+        \large   Ecologies of Attention and Understanding in \\ 
+                      the Classical Music Education Project of \textit{Sesame Street}  \\
+	\normalsize or \\
+	\large The Bird, The Worm, and the Mushroom: \\
+	\large Three Stories of Listening\\
+        \vspace{0.5cm}
+        \normalsize      Eden Attar \\
+        \vfill
+        \includegraphics[width=0.3\textwidth]{header_logo.png} \\
+        \vspace{0.8cm}
+        \small A thesis presented to \\ 
+                The Graduate School \\ 
+             of Washington University in \\ 
+             partial fulfillment of the \\ 
+             requirements for the degree \\ 
+                 of Master of Arts \\
+        \vspace{0.8cm}
+        \normalsize August 2022 \\
+        St. Louis, Missouri
+    \end{center}
+    \vspace*{0.3cm}
+    \hfill{\small \textit{compiled~\today}}
+
 	\newpage
-	\clearpage
-	\setcounter{page}{1}
-	\thispagestyle{empty}
+	\pagenumbering{roman}
 	\frenchspacing
+	\tableofcontents
+	\setcounter{page}{2}
 	
-	\section*{Introduction}	
+	\newpage
+	\doublespacing
+	\chapter*{Acknowledgements}
+	\addcontentsline{toc}{chapter}{Acknowledgements}
 
-	If I have done anything right this paper should be easy to read. I
-	think that is the kindest thing a writer can do. If I have
-	done anything right this paper should also not be quite like anything 
-	you have seen before. I might say that is the second kindest thing a 
-	writer can do.  
+	They say that it takes a village to raise a child, but it seems to me 
+	that it  takes a village to accomplish just about anything, so I would
+	like to thank my village. 
 
-	In the spirit of easy reading, here's a summary of what lies ahead:
+	That is the faculty at WASHU, who have 
+	let me run a just a little bit wild: Alex Stafaniak, Paul Stienbeck, 
+	Laurn Eldrige Stewart, Todd Decker, and Christopher Douthitt. I would
+	like to thank my colleagues Jacob Cupps, Daniel Fister, and Elena Farrel
+	for their comments and conversations on this work. I would especially 
+	like to thank Jacob for posting their thesis \LaTeX \ files to Github,
+	of which I made liberal use in formatting this document. 
+
+	I am forever indebted to the community over at the Muppet Fandom Wiki 
+	for all the cataloguing and research that they have made freely 
+	available, without which this
+	thesis would have looked very different. This thesis would have been
+	impossible to write without the use of a Zettelkasten, and I am forever
+	grateful to the work of Niklas Luhmann and Sönke Ahrens.
+
+	This project has been guided and sent in new directions by all
+	of the friends who made space to explore the ideas that I develop
+	in this paper. I would like to thank them all, too many too count,
+	but especially, my brunch group, Max Raden, Sarah Winski, Glass, 
+	Maël Ng-Pavel, Sage, and my
+	friend and personal poet laureate Miles White. 
+
+	\newpage
+
+	I am grateful for the love, community, and support that I found in the 
+	anarchist, and non-anarchist, bicycle clubs of St. Louis.\\ 
+
+	
+	\vspace{0.2cm}
+	\hfill{Eden Attar}
+
+	\noindent \textit{Washington University in St. Louis}
+
+	\noindent \textit{August 2022}
+
+	\newpage
+	\begin{center}
+	\topskip0pt
+	\vspace*{\fill}
+
+	To all the friends we made along the way.
+
+	\vspace*{\fill}
+
+	\end{center}
+
+	\newpage
+
+	\chapter*{Preface}
+	\addcontentsline{toc}{chapter}{Preface}
 
 	This is a paper about the ecologies of attention and understanding 
 	evident in and emergent from the presentation of classical music on the
 	classic children's television program \textit{Sesame Street.}  
-	The paper takes two parts. The first part is an analysis of context,
+	The paper is written in two chapters. The first is an analysis of context,
 	attention, and education on the program, framed through the analogy of
 	bird-watching. I argue that the classical music education which is 
 	presented on the program deviates from the humanitarian norm of 
@@ -79,11 +147,11 @@
 	which create a program whose character is emergent and consistent, but
 	not unified.   
 
-	Part two is an analysis of classical music performance on the program, 
+	Chapter  two is an analysis of classical music performance on the program, 
 	framed through the analogy of the worm-listener---they who listen as 
 	outsiders to 
 	the arcane sound of the world beneath our feet. The worm listener
-	encapsulates the dynamic between and aerial listener and a subterranean
+	encapsulates the dynamic between an aerial listener and a subterranean
 	listener encountering each other and their sensory worlds. The worm 
 	listener listens across boundaries be they physical, such as the
 	boundary between the air and the ground, or social, such as boundaries
@@ -111,17 +179,20 @@
 	\textit{geophone}, which allows for the aerial listener to perceive and
 	engage with the arcane sounds of underworld.  
 	
-	Each part of the paper begins with a prologue---or dare I say, a 
-	dramatic monologue---written in first-person perspective
+	Each chapter of the paper begins with a prologue written in first-person
+	perspective
 	which grounds the following discussion. If the chapters look at
 	musical and educational ecologies, the prologues give lived context for
 	the geological bedrock on which these ecologies are based. The paper 
 	ends, as it begins, with a final prologue. This final section compares
-	experiencing the internet to mushroom hunting, and looks at recent media	changes to \ses street consumption.  
-
-	\newpage	
-	\section*{Prologue to Part I : In \textit{media} res}
+	experiencing the internet to mushroom hunting, and looks at recent media
+	changes to \ses street consumption.  
 	
+	\newpage	
+	\pagenumbering{arabic}
+	\section*{Prologue to Chapter 1 : In \textit{media} res}
+	\addcontentsline{toc}{chapter}{Prologue to Chapter 1 : In \textit{media} res}
+
 	\noindent
 	On a summer evening in Saint Louis I was listening to the radio in
 	the kitchen. In the research for this paper, which had grown from a 
@@ -284,16 +355,9 @@
 
 
 	\newpage
-	\thispagestyle{empty}
-	\vspace*{30pt}
-	\begin{center}
-	{\Huge Part I\\ 
-	\Large The Bird-Watcher:\\
-	Attention, Education, and Entertainment}
-	\end{center}
-	\newpage
+	\chapter{The Bird-Watcher: Attention, Education, and Entertainment}
 
-	\section*{Entertainment: Welcome to \textit{Sesame Street}}
+	\section{Entertainment: Welcome to \textit{Sesame Street}}
 
 	\noindent\textit{Sesame Street} needs little introduction. One of the
 	longest
@@ -347,7 +411,7 @@
 	which is needed for the \ses educational project.
 		
 
-	\section*{Listening \textit{with}: Attention as Grounds for Ethics}	
+	\section{Listening \textit{with}: Attention as Grounds for Ethics}	
 
 	The ethos of music on \textit{Sesame Street} was perhaps best 
 	summarized by Joe Rapso, the first music director of the program, in a
@@ -462,9 +526,9 @@
 	are basically useless for academic research because they lack, of all
 	things, page numbers. At its bare-bones, a synthetic work like this
 	methodology section is just a long list of page numbers, which makes 
-	my reading habbits slightly unhealthy. I'm going to go back and find
-	the page numbers in the hard cover edition, but for now, I will list
-	them as fractions.]{Odell}  
+	my reading habbits slightly unhealthy. As an experiment,
+	however, I have decided to just go ahead and list
+	the page numbers as fractions.]{Odell}  
 	``Listening \textit{with},'' then is not ``hearing \textit{with},'' 
 	that is, not as co-perception, but rather an amorphous and rhizomatic
 	form of co- and meta- awareness and offering of attention.  
@@ -571,7 +635,7 @@
 
 
 	\begin{quote}
-	\subsubsection*{Case Study 1: Itzahk Perlman and ``What's Easy for You
+	\subsection{Case Study 1: Itzahk Perlman and ``What's Easy for You
 	 is Hard for Me''}
 	
 	\ttfamily
@@ -626,7 +690,8 @@
 	that of 
 	objective distance, looking over the musical landscape, but that of the 
 	bird listener listening along with. There is no audience in this skit, 
-	nor is there hierarchy, reverence, or authority. There is no criticism
+	nor is reverence, authority, or power wielded through hierarchy. 
+	There is no criticism
 	nor nor teaching going on and he is not there to fix or improve her
 	playing. Perlman may be
 	virtuosic, but he is not established as a master guiding his pupils.
@@ -673,11 +738,15 @@
 	educational purposes.
 	
 	And like sand on a playground is no less real for its context,
-	this skit is no less real for being filmed. Perlman actually 
+	the actions in this skit are no less real for being filmed. Perlman actually 
 	limped up the tall steps onto the stage as he had done countless times 
 	outside of the \textit{Sesame Street} set---this time was no easier than
 	any other. The girl actually played as she has obviously done for
-	hundreds of hours, and this time was no easier than any other. 
+	hundreds of hours and this time was no easier than any other. 
+	However, just as a sandbox is a constructed world,
+	is a \textit{performance} of a beach, this skit too, is a 
+	performance. The steps were put there \textit{so that} Perlman could
+	demonstrate the very real struggle that he faces in everyday life.
 	Though what we at home are seeing is a representation of a social 
 	encounter, it is a recreation of actual	experiences. 
 
@@ -701,7 +770,7 @@
 	
 	\begin{quote}
 	
-	\subsubsection*{Case Study 2: Glennie and Linda}
+	\subsection{Case Study 2: Glennie and Linda}
 	
 	\ttfamily
 	
@@ -795,7 +864,7 @@
 	communication.	
 
 
-	\section*{Education}	
+	\section{Education}	
 	
 
 	\textit{Sesame Street} was met with a broad range of reactions to its 
@@ -1019,7 +1088,7 @@
 	A non-striated, Illichian education, then makes perfect sense for
 	a televised early-childhood supplement.
 
-	\section*{Funding, political backgrounds, and deschooling society}
+	\subsection{Funding, political backgrounds, and deschooling society}
 
 	Perfect sense, except for the fact that it was funded by the nation’s 
 	two largest philanthropic organizations—the Carnegie Corporation and 
@@ -1167,7 +1236,9 @@
 
 
 	\newpage
-	\section*{Prologue to Part II: Geophones, televisions, worms}
+	\section*{Prologue to Chapter 2: Geophones, televisions, worms}
+	\addcontentsline{toc}{chapter}{Prologue to Chapter 2: Geophones, televisions, worms}
+
 
 	I spent something like a quarter of my life on the south side of 
 	Chicago. There was a summer during that period where I got into the 
@@ -1224,8 +1295,10 @@
 	real material and social barriers and striations that bar us from or 
 	move us towards these different forms of listening.
 		
-	\section*{The \textit{Young People's Concerts}: classical music and 
+	\subsection*{The \textit{Young People's Concerts}: classical music and 
 	mass media}
+	\addcontentsline{toc}{section}{The \textit{Young People's Concerts}: 
+	classical music and mass media}
 
 	\noindent The Bernstein \textit{Young Peoples Concerts} are perhaps the
 	best known example of public classical music pedagogy. Leonard 
@@ -1340,7 +1413,7 @@
 	pedagogy and education via electronic mass media, the power of the 
 	classical music
 	establishment and its institutional ecologies are re-inscribed. As
-	we will see in section II, even parodies of classical music 
+	we will see in chapter 2, even parodies of classical music 
 	uphold its status as much as they deride it. By 
 	setting up the elite musical culture as an object worthy of deflation,
 	its status and spectacle are preserved in their high 
@@ -1359,7 +1432,9 @@
 	television allows for aerial ears to listen to the underground, and the
 	worms hears the aerial listeners listening,    
 
-	\section*{The looking is the beauty}
+	\subsection*{The looking is the beauty}
+	\addcontentsline{toc}{section}{The looking is the beauty}
+
 	
 	I have written against the idea of art as uplift. However, art and
 	media---two terms which I will not draw a distinction between---can
@@ -1475,17 +1550,10 @@
 	on \textit{Sesame Street} and its goals of socio-emotional learning. 
 
 	\newpage
-	\thispagestyle{empty}
-	\vspace*{30pt}
-	\begin{center}
-	{\Huge Part II\\ 
-	\Large The Worm-Listener:\\
-	Parody, Virtuosity, and Childhood}
-	\end{center}
+	\chapter{The Worm-Listener: Parody, Virtuosity, and Childhood}
 
 
-	\newpage
-	\section*{Listening \textit{with} the Music: Ecological Humor} 
+	\section{Listening \textit{with} the Music: Ecological Humor} 
 
 	Victor Borge was a Danish pianist of Jewish heritage. He was known for 
 	parodying the names of composers and unexpectedly inserting 
@@ -1603,7 +1671,7 @@
 	listened to by the musical underworld of classical music which is so 
 	often out of limits.
 
-	\section*{``\textit{Pretty Great} Performances:'' play, parody, and 
+	\section{``\textit{Pretty Great} Performances:'' play, parody, and 
 	classical music on \ses}
 	
 	Recall the particular design constraints of music on children's
@@ -1697,12 +1765,14 @@
 	class---\autocite[7]{Bull} become themselves a thing of play, 
 	deconstructed and sandboxed. 
 
-	\section*{Authenticity}
+	\section{Authenticity}
 
 	An appearance by Yo-Yo Ma on the program reveals the unusual status 
 	which ``authenticity'' has on \textit{Sesame Street}. In a similar 
 	skit to that of Galway at ``Barn-egie Hall,'' Ma plays the 
 	``Beethoven quartet for two honkers, dinger, and cello,'' 
+
+	\subsection{Case Study 3: Ma and the Honkers}
 
 	\begin{quote}
 
@@ -1851,7 +1921,7 @@
 	compositional authenticity are essentially impossible given the 
 	audience's youthful lack of education on the topic. 
 	
-	\section*{Virtuosity}
+	\section{Virtuosity}
 
 	\textit{Sesame Street} does not present a homogeneous image of 
 	virtuosity. This 
@@ -1893,8 +1963,8 @@
 	violin lessons and investment in middle-class identity---that are 
 	inherent in its rituals. 
 
-	\subsection*{Character Study 1: Yo-Yo Ma and Virtuosity as 
-	Listening With} 
+	\subsection{Character Study 1: Yo-Yo Ma and virtuosity as 
+	listening \textit{with}} 
 
 	Yo-Yo Ma's individual persona interacts with \textit{Sesame Street}'s
 	educational project to create a diverse presentation of virtuosity. 
@@ -2007,7 +2077,7 @@
 	the beauty, is the virtuosity.  
 
 
-	\subsection*{Race and genera}
+	\subsection{Race and genera}
 
 	From his vocabulary, vocal delivery, and occupation as a jazz 
 	saxophonist, it is clear Hoots the owl is Black. Hoots is voiced by 
@@ -2095,7 +2165,7 @@
 	musical performance, can blossom into mutual understanding.
 
 
-	\subsection*{Interiority and the limits of understanding}
+	\subsection{Interiority and the limits of understanding}
 
 	It is worth noting that in the beginning of this skit while Ma is 
 	practicing his face is expressive, his eyes are closed, and he has no 
@@ -2176,7 +2246,7 @@
 	decision which can lead to the healing of deep historical wounds, 
 	divides, and misunderstandings.
 
-	\subsection*{Character Study 2: Evelyn Glennie: Teaching the world to
+	\subsection{Character Study 2: Evelyn Glennie: teaching the world to
 	 listen} 
 
 	Evelyn Glennie is a Scottish percussionist born in 
@@ -2409,7 +2479,7 @@
 	a more casual outfit which included pants rather than a dress, in order
 	to seem more approachable.  
 
-	\subsection*{Disability and the politics and poetics of listening}	
+	\subsection{Disability and the politics and poetics of listening}	
 
 
 	Glennie does not like to have her deafness highlighted in her 
@@ -2577,7 +2647,8 @@
 
 	\newpage
 	\section*{Prologue to forever: Mushrooms, mycelia, the internet}
-	
+	\addcontentsline{toc}{chapter}{Prologue to forever: Mushrooms, mycelia, the internet}
+
 	There is an image I have seen a few times surrounding discussions of 
 	mushrooms which places a mycelial network and a projection of the 
 	internet side-by-side
@@ -2749,7 +2820,11 @@
 	how, and, if you ask me, I'd say that's how we get to \textit{Sesame 
 	Street.} 
 
+
+
 \newpage
+	\addcontentsline{toc}{chapter}{Bibliography}
 \singlespacing
 \printbibliography
+	
 \end{document}
